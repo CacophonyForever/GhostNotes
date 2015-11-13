@@ -1,0 +1,47 @@
+#headerbox {
+    width: 50%;
+    margin: 0 auto;
+}
+img.headerlogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headerlinks {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+   li.artpiece 	 {
+        width: 200px;
+        min-height: 250px;
+        border: 1px solid #000;
+        display: inline-block;
+        margin: 5px;
+    }
+    ul.artlist {
+	   margin: 0 auto;
+    text-align: center;
+-moz-column-count: 2; /* For FireFox */
+-webkit-column-count: 2; /* For Safari/Chrome */
+column-count: 2; /* For when the standard gets fully supported */
+}
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */

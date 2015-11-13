@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SevvyArt</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="headerbox">
+<%= link_to image_tag("logo.png", class: 'headerlogo', alt: 'Ghost Jokes'), 'localhost:3000' %>
+
+
+<div class="headerlinks">
+<%= link_to image_tag('about.png', :onmouseout => "this.src='/images/about.png'", :onmouseover => "this.src='/images/abouthover.gif'"), "/about" %> 
+
+&nbsp; <%= image_tag('cross.png') %> &nbsp;
+
+<%= link_to image_tag('blog.png', :onmouseout => "this.src='/images/blog.png'", :onmouseover => "this.src='/images/bloghover.gif'"), "/blog" %> 
+
+&nbsp; <%= image_tag('cross.png') %> &nbsp;
+
+
+<%= link_to image_tag('shop.png', :onmouseout => "this.src='/images/shop.png'", :onmouseover => "this.src='/images/shophover.gif'"), "/gallery" %> 
+
+
+&nbsp; <%= image_tag('cross.png') %> &nbsp;
+<%= link_to image_tag('contact.png', :onmouseout => "this.src='/images/contact.png'", :onmouseover => "this.src='/images/contacthover.gif'"), "/contact" %> 
+
+</div>
+</div>
+
+<div class="bodybox">
+<%= yield %>
+</div>
+
+<div class="footer"> All works &copy; 2015 Sevvy Graves, reproduction without permission is strictly prohibited </div>
+</body>
+</html>

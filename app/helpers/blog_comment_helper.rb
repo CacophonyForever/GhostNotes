@@ -1,0 +1,2 @@
+module BlogCommentHelper
+end

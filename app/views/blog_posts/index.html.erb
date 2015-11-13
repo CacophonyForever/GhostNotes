@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Sevvy's Art Blog</h1>
+
+
+    <% @blog_posts.each do |blog_post| %>
+        <div>
+	<h2><%= link_to blog_post.title, blog_post %></h2>
+        (<span class="edit_entry"><%= link_to 'Edit', edit_blog_post_path(blog_post) %></span>
+        <span class="edit_entry"><%= link_to 'Delete', blog_post, method: :delete, data: { confirm: 'Are you sure?' } %></span>)
+
+	<h4><%= blog_post.created_at %></h4>
+        <p><%= blog_post.body %></p>
+	<p><%= link_to 'Add comment', new_blog_comment_path %>
+
+      </div>
+    <% end %>
+
+<br>
+
+<%= link_to 'New Blog post', new_blog_post_path %>

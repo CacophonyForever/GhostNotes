@@ -1,0 +1,15 @@
+
+// Place all the styles related to the arts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+   li.artpiece {
+        width: 200px;
+        min-height: 250px;
+        border: 1px solid #000;
+        display: inline-block;
+        margin: 5px;
+    }
+    ul.artlist {
+	   margin: 0 auto;
+    text-align: center;
+}

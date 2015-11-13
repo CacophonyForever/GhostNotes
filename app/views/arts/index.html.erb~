@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Arts</h1>
+
+  <div>
+	<ul class="artlist">
+    <% @arts.each do |art| %>
+      <li class="artpiece">
+        <span> <%= image_tag(art.image.url, height:200, width:300) %> </span> <br />
+        <span><strong>Name:</strong> <%= art.name %></span> <br />
+        <span><strong>Year:</strong> <%= art.year %></span> <br />
+        <span><strong>Description:</strong> <%= art.description %></span> &nbsp;
+<p>
+        <span><%= link_to 'Show', art %></span>  &nbsp;
+        <span><%= link_to 'Edit', edit_art_path(art) %></span>
+        <span><%= link_to 'Destroy', art, method: :delete, data: { confirm: 'Are you sure?' } %></span> <br />
+</p>
+<li>
+    <% end %>
+  </ul>
+
+<br>
+
+<%= link_to 'New Art', new_art_path %>

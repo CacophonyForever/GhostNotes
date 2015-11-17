@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   resources :blog_comments
   resources :blog_comments
   resources :blog_posts
+  get '/' => 'blog_posts#index'
   get '/blog' => 'blog_posts#index' 
   get '/blog/comments' => 'blog_comments#index'
  get '/home' => 'static_pages#home'
@@ -9,7 +10,7 @@ Rails.application.routes.draw do
   get '/about' => 'static_pages#about'
 
   get '/contact' => 'static_pages#contact'
-
+  get '/gallery' => 'arts#index'
   resources :arts
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

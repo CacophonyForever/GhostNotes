@@ -1,16 +1,26 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Sevvy's Art Blog</h1>
+<h1>Latest Updates</h1>
 
 
     <% @blog_posts.each do |blog_post| %>
-        <div>
-	<h2><%= link_to blog_post.title, blog_post %></h2>
+        <div class="blogbox">
+
+        <div class="blogtitlebox">
+        <h2 class = "blogtitle"><%= link_to blog_post.title, blog_post %></h2>
+	  <h4 class = "blogcreatedat"><%= blog_post.created_at %></h4>
+        </div>
+        
         (<span class="edit_entry"><%= link_to 'Edit', edit_blog_post_path(blog_post) %></span>
         <span class="edit_entry"><%= link_to 'Delete', blog_post, method: :delete, data: { confirm: 'Are you sure?' } %></span>)
 
-	<h4><%= blog_post.created_at %></h4>
+
         <p><%= blog_post.body %></p>
+	<hr />
+	<% @comments = BlogComment.where(:blog_post_id => blog_post.id) %>
+	<% @comments.each do |comment| %>
+        <p><%= comment.body %> </p>
+        <% end %>
 	<p><%= link_to 'Add comment', new_blog_comment_path %>
 
       </div>

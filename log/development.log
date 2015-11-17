@@ -9636,3 +9636,2836 @@ ActionController::RoutingError (No route matches [GET] "/gallery"):
   Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
   Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
   Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (35.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-13 11:58:27 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/railties-4.2.4/lib/rails/templates/rails/welcome/index.html.erb (1.7ms)
+Completed 200 OK in 17ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 11:58:31 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 304ms (Views: 298.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-13 11:58:47 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 45ms (Views: 44.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-13 11:58:49 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 54ms (Views: 53.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-13 11:58:49 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 52ms (Views: 51.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-13 11:58:49 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 46ms (Views: 45.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-13 11:58:49 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 57ms (Views: 56.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-13 11:58:50 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 53ms (Views: 52.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-13 11:58:50 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 48ms (Views: 47.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 11:59:29 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 44ms (Views: 43.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-13 11:59:30 -0800
+
+ActionController::RoutingError (No route matches [GET] "/gallery"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/pax/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/pax/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/pax/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.5ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (54.8ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (18.9ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (37.0ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-13 11:59:30 -0800
+
+ActionController::RoutingError (No route matches [GET] "/gallery"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/pax/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/pax/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/pax/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.6ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (19.0ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (35.8ms)
+
+
+Started GET "/arts" for 127.0.0.1 at 2015-11-13 11:59:38 -0800
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.2ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 70ms (Views: 66.1ms | ActiveRecord: 0.5ms)
+  [1m[36mArt Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "arts" LIMIT 1[0m
+  [1m[35mBlogComment Exists (0.1ms)[0m  SELECT  1 AS one FROM "blog_comments" LIMIT 1
+  [1m[36mBlogPost Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "blog_posts" LIMIT 1[0m
+  [1m[35mSale Exists (0.1ms)[0m  SELECT  1 AS one FROM "sales" LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "arts"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "arts"[0m
+  [1m[35mArt Load (0.1ms)[0m  SELECT  "arts".* FROM "arts" LIMIT 1 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "blog_comments"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "blog_comments"
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT  "blog_comments".* FROM "blog_comments" LIMIT 1 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "blog_posts"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "blog_posts"[0m
+  [1m[35mBlogPost Load (0.1ms)[0m  SELECT  "blog_posts".* FROM "blog_posts" LIMIT 1 OFFSET 0
+
+
+Started GET "/arts/new" for 127.0.0.1 at 2015-11-13 12:28:19 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArtsController#new as HTML
+  Rendered arts/_form.html.erb (23.1ms)
+  Rendered arts/new.html.erb within layouts/application (26.9ms)
+Completed 200 OK in 304ms (Views: 280.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/arts" for 127.0.0.1 at 2015-11-13 12:28:36 -0800
+Processing by ArtsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aWTuI1NQ//XCh8zPo/WBRk7fAWiBp1CdpRShnQdVODXeWWXgyzMcZrCuPDDFKAXWc3+Vy0v3FPUmvHu8H0mK8A==", "art"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007fac59b4d220 @tempfile=#<Tempfile:/tmp/RackMultipart20151113-4887-9ylxmx.jpg>, @original_filename="mqdefault.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"art[image]\"; filename=\"mqdefault.jpg\"\r\nContent-Type: image/jpeg\r\n">, "name"=>"piggy", "year"=>"2011", "description"=>"check out the snout on that oinker"}, "commit"=>"Create Art"}
+Command :: file -b --mime '/tmp/172d606112f3936c33f5efb9e01959de20151113-4887-1h7ct8i.jpg'
+  [1m[35m (0.1ms)[0m  begin transaction
+Command :: file -b --mime '/tmp/172d606112f3936c33f5efb9e01959de20151113-4887-1v8iomi.jpg'
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "arts" ("name", "year", "description", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "piggy"], ["year", 2011], ["description", "check out the snout on that oinker"], ["image_file_name", "mqdefault.jpg"], ["image_content_type", "image/jpeg"], ["image_file_size", 8856], ["image_updated_at", "2015-11-13 20:28:36.422236"], ["created_at", "2015-11-13 20:28:36.431647"], ["updated_at", "2015-11-13 20:28:36.431647"]]
+  [1m[35m (6.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/arts/2
+Completed 302 Found in 32ms (ActiveRecord: 6.8ms)
+
+
+Started GET "/arts/2" for 127.0.0.1 at 2015-11-13 12:28:36 -0800
+Processing by ArtsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArt Load (0.3ms)[0m  [1mSELECT  "arts".* FROM "arts" WHERE "arts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered arts/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 52ms (Views: 45.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/arts" for 127.0.0.1 at 2015-11-13 12:28:38 -0800
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.2ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 63ms (Views: 62.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/arts/new" for 127.0.0.1 at 2015-11-13 12:28:41 -0800
+Processing by ArtsController#new as HTML
+  Rendered arts/_form.html.erb (4.1ms)
+  Rendered arts/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 53ms (Views: 52.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/arts" for 127.0.0.1 at 2015-11-13 12:28:59 -0800
+Processing by ArtsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bDrnYYItrdQzNZWAIgLJ3QaXn3GIbPNrO4CC3MRYFkbbB2yiGk5OR0EcZX9E301NOzcL0kI8twO4KFj93ESkgw==", "art"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007fac59820c00 @tempfile=#<Tempfile:/tmp/RackMultipart20151113-4887-wfj126.png>, @original_filename="Photogenic-and-Cute-Animals-14.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"art[image]\"; filename=\"Photogenic-and-Cute-Animals-14.png\"\r\nContent-Type: image/png\r\n">, "name"=>"hedgie", "year"=>"1998", "description"=>"Hedgehog from back in the day"}, "commit"=>"Create Art"}
+Command :: file -b --mime '/tmp/916f1b359771c7568da6af314745473620151113-4887-1856i4z.png'
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/tmp/916f1b359771c7568da6af314745473620151113-4887-1bjh3af.png'
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "arts" ("name", "year", "description", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "hedgie"], ["year", 1998], ["description", "Hedgehog from back in the day"], ["image_file_name", "Photogenic-and-Cute-Animals-14.png"], ["image_content_type", "image/png"], ["image_file_size", 387759], ["image_updated_at", "2015-11-13 20:28:59.073986"], ["created_at", "2015-11-13 20:28:59.082768"], ["updated_at", "2015-11-13 20:28:59.082768"]]
+  [1m[36m (7.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/arts/3
+Completed 302 Found in 31ms (ActiveRecord: 7.5ms)
+
+
+Started GET "/arts/3" for 127.0.0.1 at 2015-11-13 12:28:59 -0800
+Processing by ArtsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mArt Load (0.1ms)[0m  SELECT  "arts".* FROM "arts" WHERE "arts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered arts/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 46ms (Views: 44.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/arts" for 127.0.0.1 at 2015-11-13 12:29:03 -0800
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.2ms)[0m  [1mSELECT "arts".* FROM "arts"[0m
+  Rendered arts/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 65ms (Views: 64.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/arts/new" for 127.0.0.1 at 2015-11-13 12:29:33 -0800
+Processing by ArtsController#new as HTML
+  Rendered arts/_form.html.erb (4.5ms)
+  Rendered arts/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 59ms (Views: 57.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/arts" for 127.0.0.1 at 2015-11-13 12:29:46 -0800
+Processing by ArtsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kND9aX4J5WRvgDHpMmJapymOVCX6iAUTJvV0oe1Lng8n7Xaq5moG9x2pwRZUv943FC7AhjDYQXulXa6A9Vcsyg==", "art"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00000004c009c8 @tempfile=#<Tempfile:/tmp/RackMultipart20151113-4887-jzshrg.png>, @original_filename="Screenshot from 2015-11-06 10:42:44.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"art[image]\"; filename=\"Screenshot from 2015-11-06 10:42:44.png\"\r\nContent-Type: image/png\r\n">, "name"=>"huge screenshot", "year"=>"2015", "description"=>"test screenshot"}, "commit"=>"Create Art"}
+Command :: file -b --mime '/tmp/995a887472bae6459035c7eea7b02f0b20151113-4887-mrnn.png'
+  [1m[35m (0.2ms)[0m  begin transaction
+Command :: file -b --mime '/tmp/995a887472bae6459035c7eea7b02f0b20151113-4887-18r0d1y.png'
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "arts" ("name", "year", "description", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "huge screenshot"], ["year", 2015], ["description", "test screenshot"], ["image_file_name", "Screenshot_from_2015-11-06_10_42_44.png"], ["image_content_type", "image/png"], ["image_file_size", 615290], ["image_updated_at", "2015-11-13 20:29:46.131014"], ["created_at", "2015-11-13 20:29:46.139930"], ["updated_at", "2015-11-13 20:29:46.139930"]]
+  [1m[35m (10.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/arts/4
+Completed 302 Found in 29ms (ActiveRecord: 10.8ms)
+
+
+Started GET "/arts/4" for 127.0.0.1 at 2015-11-13 12:29:46 -0800
+Processing by ArtsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mArt Load (0.1ms)[0m  [1mSELECT  "arts".* FROM "arts" WHERE "arts"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered arts/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 45ms (Views: 43.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/arts" for 127.0.0.1 at 2015-11-13 12:29:56 -0800
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.3ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 65ms (Views: 64.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-13 12:30:00 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 54ms (Views: 53.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-13 12:30:02 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 50ms (Views: 49.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 12:30:06 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 52ms (Views: 46.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog_posts/1/edit" for 127.0.0.1 at 2015-11-13 12:30:09 -0800
+Processing by BlogPostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered blog_posts/_form.html.erb (2.2ms)
+  Rendered blog_posts/edit.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 66ms (Views: 64.6ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/blog_posts/1" for 127.0.0.1 at 2015-11-13 12:30:33 -0800
+Processing by BlogPostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YSmtb3pf9nkzfgUA1/mHXgJ9nj8kBrRfCF15sNyYhF3WFCas4jwV6kFX9f+xJAPOP90KnO5W8DeL9aORxIQ2mA==", "blog_post"=>{"title"=>"Welcome!", "body"=>"Welcome to Ghost Notes, the site to view and buy the artwork of Sevvy Graves"}, "commit"=>"Update Blog post", "id"=>"1"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "blog_posts" SET "title" = ?, "body" = ?, "updated_at" = ? WHERE "blog_posts"."id" = ?[0m  [["title", "Welcome!"], ["body", "Welcome to Ghost Notes, the site to view and buy the artwork of Sevvy Graves"], ["updated_at", "2015-11-13 20:30:33.608378"], ["id", 1]]
+  [1m[35m (6.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/blog_posts/1
+Completed 302 Found in 11ms (ActiveRecord: 6.5ms)
+
+
+Started GET "/blog_posts/1" for 127.0.0.1 at 2015-11-13 12:30:33 -0800
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered blog_posts/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 51ms (Views: 50.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2015-11-13 12:30:35 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 47ms (Views: 46.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/new" for 127.0.0.1 at 2015-11-13 12:30:37 -0800
+Processing by BlogPostsController#new as HTML
+  Rendered blog_posts/_form.html.erb (2.0ms)
+  Rendered blog_posts/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 62ms (Views: 61.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blog_posts" for 127.0.0.1 at 2015-11-13 12:31:18 -0800
+Processing by BlogPostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sLyCk/BcQV85tR/VFabNZI+0g4/7ZFYO2krJbAQJdYoHgQlQaD+izEuc7ypze0n0shQXLDE0EmZZ4hNNHBXHTw==", "blog_post"=>{"title"=>"Progress coming along", "body"=>"the header looks really pretty, its gonna be nade to be re-done so that everything fits better and is in line, but so far so good I think! For an alpha at least"}, "commit"=>"Create Blog post"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "blog_posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Progress coming along"], ["body", "the header looks really pretty, its gonna be nade to be re-done so that everything fits better and is in line, but so far so good I think! For an alpha at least"], ["created_at", "2015-11-13 20:31:18.038420"], ["updated_at", "2015-11-13 20:31:18.038420"]]
+  [1m[36m (14.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/blog_posts/2
+Completed 302 Found in 19ms (ActiveRecord: 14.8ms)
+
+
+Started GET "/blog_posts/2" for 127.0.0.1 at 2015-11-13 12:31:18 -0800
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mBlogPost Load (0.1ms)[0m  SELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered blog_posts/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 49ms (Views: 47.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/blog_posts" for 127.0.0.1 at 2015-11-13 12:31:21 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 53ms (Views: 52.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/new" for 127.0.0.1 at 2015-11-13 12:31:28 -0800
+Processing by BlogPostsController#new as HTML
+  Rendered blog_posts/_form.html.erb (1.6ms)
+  Rendered blog_posts/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 51ms (Views: 49.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blog_posts" for 127.0.0.1 at 2015-11-13 12:32:06 -0800
+Processing by BlogPostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LC+xfe21c9x3psTvagl98P3aCI/i7XJ7GY57CzDv5imbEjq+ddaQTwWPNBAM1PlgwHqcLCi9NhOaJqEqKPNU7A==", "blog_post"=>{"title"=>"Long test blog post", "body"=>"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\r\n \r\n\r\nContrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32."}, "commit"=>"Create Blog post"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blog_posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Long test blog post"], ["body", "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\r\n \r\n\r\nContrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32."], ["created_at", "2015-11-13 20:32:06.714023"], ["updated_at", "2015-11-13 20:32:06.714023"]]
+  [1m[35m (11.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/blog_posts/3
+Completed 302 Found in 15ms (ActiveRecord: 11.7ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2015-11-13 12:32:06 -0800
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered blog_posts/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 51ms (Views: 49.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 12:32:09 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 50ms (Views: 49.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 12:32:32 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 50ms (Views: 49.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-13 12:32:48 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 53ms (Views: 52.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 12:32:49 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.4ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 54ms (Views: 52.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 12:32:52 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 51ms (Views: 50.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 12:36:45 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 57ms (Views: 56.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 12:36:48 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 51ms (Views: 49.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 12:36:50 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.3ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 51ms (Views: 50.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 12:36:51 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 55ms (Views: 53.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 12:38:25 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 90ms (Views: 88.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-eaff1d7b45b82b6cf772ddd637ad6fca94dd926dab309da5bf33250e782f34ba.css?body=1" for 127.0.0.1 at 2015-11-13 12:38:25 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:38:25 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-13 12:38:25 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-13 12:38:25 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-13 12:38:25 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:38:25 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:38:25 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:38:25 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:38:25 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-13 12:38:25 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 12:38:26 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 52ms (Views: 51.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-eaff1d7b45b82b6cf772ddd637ad6fca94dd926dab309da5bf33250e782f34ba.css?body=1" for 127.0.0.1 at 2015-11-13 12:38:27 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-13 12:38:27 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-13 12:38:27 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:38:27 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-13 12:38:27 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-13 12:38:27 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:38:27 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:38:27 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:38:27 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:38:27 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 12:38:28 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 58ms (Views: 57.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-eaff1d7b45b82b6cf772ddd637ad6fca94dd926dab309da5bf33250e782f34ba.css?body=1" for 127.0.0.1 at 2015-11-13 12:38:28 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-13 12:38:28 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:38:28 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:38:28 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-13 12:38:28 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-13 12:38:28 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:38:28 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:38:28 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:38:28 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-13 12:38:28 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 12:39:21 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 69ms (Views: 68.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-eaf7cc13c3fc7e625d03c9872117171a7c2ab427c758c376f5ea95ab8e0e728f.css?body=1" for 127.0.0.1 at 2015-11-13 12:39:21 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 12:41:05 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 74ms (Views: 73.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-671725c20f2b485f2e6b35704579564edc0a6d673d8be2f67b8173423b057a65.css?body=1" for 127.0.0.1 at 2015-11-13 12:41:05 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 12:42:18 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 70ms (Views: 69.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-164cbb0fffe49b0f23993722769029c20b69669d33bf7f3c33165a45ff0856af.css?body=1" for 127.0.0.1 at 2015-11-13 12:42:18 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:18 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:18 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:18 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:18 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:18 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:18 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:18 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:18 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:18 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 12:42:19 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 84ms (Views: 83.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-164cbb0fffe49b0f23993722769029c20b69669d33bf7f3c33165a45ff0856af.css?body=1" for 127.0.0.1 at 2015-11-13 12:42:20 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:20 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:20 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:20 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:20 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:20 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:20 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:20 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:20 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:20 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 12:42:21 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 69ms (Views: 67.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-164cbb0fffe49b0f23993722769029c20b69669d33bf7f3c33165a45ff0856af.css?body=1" for 127.0.0.1 at 2015-11-13 12:42:21 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:21 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:21 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:21 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:21 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:21 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:21 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:21 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:21 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:21 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 12:42:39 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 204ms (Views: 188.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-164cbb0fffe49b0f23993722769029c20b69669d33bf7f3c33165a45ff0856af.css?body=1" for 127.0.0.1 at 2015-11-13 12:42:39 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:39 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:39 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:39 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:39 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:39 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:39 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:39 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:39 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:39 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 12:42:40 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 88ms (Views: 87.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:41 -0800
+
+
+Started GET "/assets/application.self-164cbb0fffe49b0f23993722769029c20b69669d33bf7f3c33165a45ff0856af.css?body=1" for 127.0.0.1 at 2015-11-13 12:42:41 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:41 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:41 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:41 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:41 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:41 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:41 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:41 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-13 12:42:41 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 12:43:27 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 203ms (Views: 188.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-164cbb0fffe49b0f23993722769029c20b69669d33bf7f3c33165a45ff0856af.css?body=1" for 127.0.0.1 at 2015-11-13 12:43:28 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:28 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:28 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:28 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:28 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:28 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:28 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:28 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:28 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:28 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 12:43:29 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 85ms (Views: 84.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-164cbb0fffe49b0f23993722769029c20b69669d33bf7f3c33165a45ff0856af.css?body=1" for 127.0.0.1 at 2015-11-13 12:43:29 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:29 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:29 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:29 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:29 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:29 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:29 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:29 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:29 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:29 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 12:43:54 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 61ms (Views: 59.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-164cbb0fffe49b0f23993722769029c20b69669d33bf7f3c33165a45ff0856af.css?body=1" for 127.0.0.1 at 2015-11-13 12:43:54 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:54 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:54 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:54 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:54 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:54 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:54 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:54 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:54 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:54 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 12:43:56 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 78ms (Views: 76.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-164cbb0fffe49b0f23993722769029c20b69669d33bf7f3c33165a45ff0856af.css?body=1" for 127.0.0.1 at 2015-11-13 12:43:56 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:56 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:56 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:56 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:56 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:56 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:56 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:56 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:56 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:56 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 12:43:57 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 55ms (Views: 54.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-164cbb0fffe49b0f23993722769029c20b69669d33bf7f3c33165a45ff0856af.css?body=1" for 127.0.0.1 at 2015-11-13 12:43:57 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:57 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:57 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:57 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:57 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:57 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:57 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:57 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:57 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:57 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 12:45:21 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 212ms (Views: 195.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-57b2b0cf0d917fc8ab3daa8bae3e87040ef6949a5c829a9fda4dd141b628078a.css?body=1" for 127.0.0.1 at 2015-11-13 12:45:22 -0800
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-13 12:45:44 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 78ms (Views: 77.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 12:45:46 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 78ms (Views: 76.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-13 12:45:49 -0800
+
+ActionController::RoutingError (No route matches [GET] "/gallery"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/pax/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/pax/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/pax/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (12.2ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (57.2ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (19.9ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (38.0ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-13 12:45:49 -0800
+
+ActionController::RoutingError (No route matches [GET] "/gallery"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/pax/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/pax/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/pax/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.5ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (42.1ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (17.4ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (34.0ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 12:45:52 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 66ms (Views: 65.5ms | ActiveRecord: 0.2ms)
+  [1m[36mArt Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "arts" LIMIT 1[0m
+  [1m[35mBlogComment Exists (0.1ms)[0m  SELECT  1 AS one FROM "blog_comments" LIMIT 1
+  [1m[36mBlogPost Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "blog_posts" LIMIT 1[0m
+  [1m[35mSale Exists (0.1ms)[0m  SELECT  1 AS one FROM "sales" LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "arts"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "arts"[0m
+  [1m[35mArt Load (0.2ms)[0m  SELECT  "arts".* FROM "arts" LIMIT 4 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "blog_comments"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "blog_comments"
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT  "blog_comments".* FROM "blog_comments" LIMIT 1 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "blog_posts"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "blog_posts"[0m
+  [1m[35mBlogPost Load (0.1ms)[0m  SELECT  "blog_posts".* FROM "blog_posts" LIMIT 3 OFFSET 0
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 12:51:42 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 193ms (Views: 179.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 12:56:05 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 289ms (Views: 274.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-3d23a3c4a1bb666a0da76b2f1e35d8d76776adc74409c70d1a8573bff0ff7d2c.css?body=1" for 127.0.0.1 at 2015-11-13 12:56:05 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 12:58:04 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 194ms (Views: 180.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 12:58:07 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 70ms (Views: 69.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 12:58:08 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.3ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 86ms (Views: 84.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 12:59:52 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 219ms (Views: 204.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-f125896b3c0777291422039c4e132a6e6d66c231f1ec3fa6b8cc5bc6ff056505.css?body=1" for 127.0.0.1 at 2015-11-13 12:59:53 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 12:59:54 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 84ms (Views: 82.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 13:01:22 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 210ms (Views: 195.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-62787d2e3e1a57324f280ae46124c1e78a5f09d91548470e64d78047988de85e.css?body=1" for 127.0.0.1 at 2015-11-13 13:01:22 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 13:04:20 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 283ms (Views: 268.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-01f50ac9be85d7839ced628ec7caaa8e0f283480b35a0813c3fb77d4895b3438.css?body=1" for 127.0.0.1 at 2015-11-13 13:04:21 -0800
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-13 13:04:33 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 47ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 13:04:36 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 47ms (Views: 46.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-11-13 13:04:46 -0800
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 48ms (Views: 47.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 13:04:49 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 60ms (Views: 59.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_comments/new" for 127.0.0.1 at 2015-11-13 13:05:55 -0800
+Processing by BlogCommentsController#new as HTML
+  Rendered blog_comments/_form.html.erb (21.1ms)
+  Rendered blog_comments/new.html.erb within layouts/application (25.8ms)
+Completed 200 OK in 94ms (Views: 85.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 13:08:13 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 293ms (Views: 278.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-3164883d9b63a9b8efa51e460ae42f3f233c0ad04b647d483b50207d48d59021.css?body=1" for 127.0.0.1 at 2015-11-13 13:08:14 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 13:08:44 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 282ms (Views: 267.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-bafb5074f0ee01017a95ed49ff0a4611a4650316fb09897083c95daf19caea40.css?body=1" for 127.0.0.1 at 2015-11-13 13:08:45 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 13:09:19 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 211ms (Views: 195.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-53ad025b12b769aba7fd8b12149040b4e1f75bfae99c76b787cf295ff5c1871c.css?body=1" for 127.0.0.1 at 2015-11-13 13:09:20 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 13:10:00 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 207ms (Views: 191.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-246f38b6dd04acebb1c2d7366f777f43b8621c28f927db86cc62a1168fc2c9c6.css?body=1" for 127.0.0.1 at 2015-11-13 13:10:00 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 13:11:41 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 296ms (Views: 281.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-073544b553ec6f25963497c7784a3ce69d3cf239c56512fc401cd08589255356.css?body=1" for 127.0.0.1 at 2015-11-13 13:11:42 -0800
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-13 13:13:03 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 46ms (Views: 45.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 13:13:04 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 61ms (Views: 60.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-11-13 13:13:07 -0800
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 48ms (Views: 47.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-11-13 13:13:08 -0800
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 50ms (Views: 49.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 13:13:10 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.4ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 49ms (Views: 47.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-13 13:31:23 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 55ms (Views: 54.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 13:31:25 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 47ms (Views: 46.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-13 13:31:32 -0800
+
+ActionController::RoutingError (No route matches [GET] "/gallery"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/pax/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/pax/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/pax/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.6ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (38.8ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (17.1ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (32.7ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-13 13:31:33 -0800
+
+ActionController::RoutingError (No route matches [GET] "/gallery"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/pax/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/pax/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/pax/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (32.5ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (16.4ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (32.4ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-13 13:32:13 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.2ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 295ms (Views: 280.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/arts/3" for 127.0.0.1 at 2015-11-13 13:32:24 -0800
+Processing by ArtsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArt Load (0.2ms)[0m  [1mSELECT  "arts".* FROM "arts" WHERE "arts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered arts/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 55ms (Views: 47.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-13 13:32:32 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 46ms (Views: 45.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 13:32:34 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 68ms (Views: 63.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-11-13 13:32:36 -0800
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 49ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-11-13 13:32:37 -0800
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 52ms (Views: 51.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 13:32:39 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 51ms (Views: 49.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-13 13:32:42 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 47ms (Views: 46.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 13:32:43 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.3ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 60ms (Views: 58.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-13 13:33:24 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 198ms (Views: 182.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-13 13:33:26 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 50ms (Views: 49.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-13 13:33:48 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 69ms (Views: 68.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 13:33:57 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.3ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 59ms (Views: 57.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-13 13:33:59 -0800
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.3ms)[0m  [1mSELECT "arts".* FROM "arts"[0m
+  Rendered arts/index.html.erb within layouts/application (26.3ms)
+Completed 200 OK in 110ms (Views: 106.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-11-13 13:34:01 -0800
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 69ms (Views: 68.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-13 13:34:03 -0800
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.2ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 66ms (Views: 64.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-13 13:34:08 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 83ms (Views: 81.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 13:36:04 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 69ms (Views: 67.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-13 13:36:43 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 48ms (Views: 47.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 13:36:45 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 54ms (Views: 53.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 13:36:45 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 55ms (Views: 53.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-13 13:36:47 -0800
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.2ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 60ms (Views: 59.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-11-13 13:36:48 -0800
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 55ms (Views: 54.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-13 13:36:50 -0800
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.2ms)[0m  [1mSELECT "arts".* FROM "arts"[0m
+  Rendered arts/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 60ms (Views: 59.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 13:36:54 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 50ms (Views: 49.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/new" for 127.0.0.1 at 2015-11-13 13:37:10 -0800
+Processing by BlogPostsController#new as HTML
+  Rendered blog_posts/_form.html.erb (19.4ms)
+  Rendered blog_posts/new.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 76ms (Views: 75.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-13 14:19:38 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 48ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 14:19:39 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 49ms (Views: 47.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-13 14:19:41 -0800
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.2ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 58ms (Views: 57.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-11-13 14:19:42 -0800
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 50ms (Views: 49.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-13 14:19:44 -0800
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.2ms)[0m  [1mSELECT "arts".* FROM "arts"[0m
+  Rendered arts/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 55ms (Views: 54.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 14:19:46 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.3ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 55ms (Views: 53.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-13 14:19:47 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 52ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-13 14:20:20 -0800
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.2ms)[0m  [1mSELECT "arts".* FROM "arts"[0m
+  Rendered arts/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 51ms (Views: 50.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-13 14:20:21 -0800
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.3ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 54ms (Views: 53.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-11-13 14:20:22 -0800
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 47ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-11-13 14:29:49 -0800
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 54ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 14:29:51 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 49ms (Views: 48.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-13 14:29:52 -0800
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.3ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 57ms (Views: 55.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 14:29:54 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 54ms (Views: 53.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-13 14:29:56 -0800
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.2ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 51ms (Views: 50.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-11-13 14:29:57 -0800
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 49ms (Views: 48.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-13 14:29:59 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-13 14:30:41 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 53ms (Views: 52.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 14:30:42 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 50ms (Views: 48.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-13 14:30:44 -0800
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.2ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 51ms (Views: 50.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-11-13 14:30:45 -0800
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 48ms (Views: 47.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-13 14:30:47 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 52ms (Views: 51.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-13 14:30:49 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 48ms (Views: 47.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 14:30:57 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 50ms (Views: 49.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-13 14:31:00 -0800
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.2ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 55ms (Views: 54.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-11-13 14:31:02 -0800
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 56ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-13 14:31:10 -0800
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.7ms)[0m  [1mSELECT "arts".* FROM "arts"[0m
+  Rendered arts/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 59ms (Views: 57.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 14:31:18 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 51ms (Views: 50.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-13 14:31:20 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 55ms (Views: 54.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 14:31:23 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 48ms (Views: 47.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-13 14:45:24 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 55ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 14:45:26 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 55ms (Views: 53.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-13 14:45:27 -0800
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.2ms)[0m  [1mSELECT "arts".* FROM "arts"[0m
+  Rendered arts/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 58ms (Views: 57.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-11-13 14:45:28 -0800
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-11-13 14:45:29 -0800
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 49ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-13 14:45:30 -0800
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.2ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 52ms (Views: 51.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-13 14:45:31 -0800
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.3ms)[0m  [1mSELECT "arts".* FROM "arts"[0m
+  Rendered arts/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 60ms (Views: 58.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 14:45:36 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 51ms (Views: 49.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-13 16:54:41 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 251ms (Views: 249.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-13 16:54:42 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (1.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 316ms (Views: 312.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-15 21:35:52 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (1.3ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 233ms (Views: 198.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-15 21:35:59 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 51ms (Views: 49.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-15 21:36:11 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 88ms (Views: 87.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-15 21:36:13 -0800
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.3ms)[0m  [1mSELECT "arts".* FROM "arts"[0m
+  Rendered arts/index.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 82ms (Views: 77.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-15 21:36:29 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 88ms (Views: 87.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-15 21:36:53 -0800
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.2ms)[0m  [1mSELECT "arts".* FROM "arts"[0m
+  Rendered arts/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 62ms (Views: 60.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-11-15 21:36:58 -0800
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 60ms (Views: 59.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-15 21:37:00 -0800
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.2ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 59ms (Views: 58.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-15 21:37:01 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 46ms (Views: 45.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-15 21:37:27 -0800
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.2ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 51ms (Views: 49.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-11-15 21:37:53 -0800
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 47ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-15 21:37:55 -0800
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.2ms)[0m  [1mSELECT "arts".* FROM "arts"[0m
+  Rendered arts/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 59ms (Views: 58.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-11-15 21:37:56 -0800
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 50ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-15 21:38:02 -0800
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.3ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 68ms (Views: 66.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-15 21:38:04 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 50ms (Views: 48.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-15 21:38:42 -0800
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.5ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 59ms (Views: 57.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-15 21:38:48 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 50ms (Views: 48.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-15 21:39:52 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 47ms (Views: 46.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-15 21:40:03 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 46ms (Views: 45.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-15 21:40:05 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 48ms (Views: 47.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-15 21:40:06 -0800
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.2ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 53ms (Views: 52.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-15 21:40:08 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 46ms (Views: 45.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-15 21:40:10 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 69ms (Views: 68.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-15 21:40:11 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 48ms (Views: 47.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-15 21:40:12 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.4ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 59ms (Views: 57.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-15 21:40:13 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.4ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 50ms (Views: 49.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-15 21:40:14 -0800
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.2ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 49ms (Views: 48.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-11-15 21:40:16 -0800
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 49ms (Views: 48.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-15 21:40:17 -0800
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.2ms)[0m  [1mSELECT "arts".* FROM "arts"[0m
+  Rendered arts/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 51ms (Views: 50.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-15 21:40:19 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 51ms (Views: 50.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-15 21:40:21 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 46ms (Views: 45.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_comments/new" for 127.0.0.1 at 2015-11-15 21:40:35 -0800
+Processing by BlogCommentsController#new as HTML
+  Rendered blog_comments/_form.html.erb (20.6ms)
+  Rendered blog_comments/new.html.erb within layouts/application (24.7ms)
+Completed 200 OK in 77ms (Views: 68.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-15 21:40:43 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 51ms (Views: 49.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-15 21:41:45 -0800
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.2ms)[0m  [1mSELECT "arts".* FROM "arts"[0m
+  Rendered arts/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 55ms (Views: 54.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-15 21:41:48 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 46ms (Views: 45.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-15 21:41:52 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.4ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 48ms (Views: 46.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-15 21:42:41 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 47ms (Views: 46.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-15 21:42:43 -0800
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.2ms)[0m  [1mSELECT "arts".* FROM "arts"[0m
+  Rendered arts/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 59ms (Views: 58.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/arts/2" for 127.0.0.1 at 2015-11-15 21:43:01 -0800
+Processing by ArtsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mArt Load (0.2ms)[0m  SELECT  "arts".* FROM "arts" WHERE "arts"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered arts/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 58ms (Views: 45.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/arts/1" for 127.0.0.1 at 2015-11-15 21:43:07 -0800
+Processing by ArtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArt Load (0.1ms)[0m  [1mSELECT  "arts".* FROM "arts" WHERE "arts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered arts/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 47ms (Views: 45.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/arts/1" for 127.0.0.1 at 2015-11-15 21:43:13 -0800
+Processing by ArtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArt Load (0.2ms)[0m  SELECT  "arts".* FROM "arts" WHERE "arts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered arts/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 49ms (Views: 47.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-15 21:43:36 -0800
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.3ms)[0m  [1mSELECT "arts".* FROM "arts"[0m
+  Rendered arts/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 58ms (Views: 56.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-11-15 21:43:38 -0800
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 51ms (Views: 50.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-15 21:43:40 -0800
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.2ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 48ms (Views: 47.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-15 21:43:41 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 86ms (Views: 85.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-15 21:43:43 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 50ms (Views: 49.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-15 21:43:47 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 52ms (Views: 51.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-15 21:43:48 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 44ms (Views: 43.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-15 21:43:50 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 46ms (Views: 45.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-15 21:43:51 -0800
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.3ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 54ms (Views: 52.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-15 21:43:53 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 51ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-15 21:43:54 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 44ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-15 21:43:54 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 48ms (Views: 47.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-15 21:43:55 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 45ms (Views: 44.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-15 21:43:55 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 48ms (Views: 47.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-15 21:43:56 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 50ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-15 21:43:56 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 45ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-15 21:43:56 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 44ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-15 21:43:58 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 47ms (Views: 46.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-15 21:43:59 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 51ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-15 21:44:35 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 48ms (Views: 47.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-15 21:44:45 -0800
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.2ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 49ms (Views: 48.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-15 21:44:48 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.4ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 52ms (Views: 50.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog_posts/new" for 127.0.0.1 at 2015-11-15 21:44:52 -0800
+Processing by BlogPostsController#new as HTML
+  Rendered blog_posts/_form.html.erb (2.4ms)
+  Rendered blog_posts/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 60ms (Views: 59.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-15 21:45:46 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 51ms (Views: 50.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-15 21:45:47 -0800
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.2ms)[0m  [1mSELECT "arts".* FROM "arts"[0m
+  Rendered arts/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 49ms (Views: 48.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-15 21:45:49 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 45ms (Views: 44.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-15 21:46:09 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 48ms (Views: 47.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-15 21:46:11 -0800
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.2ms)[0m  [1mSELECT "arts".* FROM "arts"[0m
+  Rendered arts/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 55ms (Views: 53.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-15 21:46:13 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 46ms (Views: 45.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-15 21:46:14 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 50ms (Views: 48.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-15 21:46:15 -0800
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.2ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 52ms (Views: 51.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-11-15 21:46:16 -0800
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 52ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-16 01:35:10 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 49ms (Views: 48.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-16 01:35:13 -0800
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.2ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 55ms (Views: 53.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-11-16 01:35:18 -0800
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 53ms (Views: 52.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-11-16 01:35:18 -0800
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 54ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-16 01:35:20 -0800
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.2ms)[0m  [1mSELECT "arts".* FROM "arts"[0m
+  Rendered arts/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 49ms (Views: 48.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-16 12:44:54 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 53ms (Views: 52.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-16 12:45:06 -0800
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.3ms)[0m  [1mSELECT "arts".* FROM "arts"[0m
+  Rendered arts/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 49ms (Views: 48.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-16 12:45:07 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 53ms (Views: 51.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-16 12:46:37 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 48ms (Views: 47.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-16 12:46:38 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 44ms (Views: 43.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-16 12:46:40 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 45ms (Views: 44.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-16 12:46:42 -0800
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.2ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 50ms (Views: 49.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-16 12:46:44 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.4ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 65ms (Views: 63.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-11-16 12:46:46 -0800
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 45ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-16 12:46:49 -0800
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.2ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 50ms (Views: 48.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-16 12:46:54 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 46ms (Views: 45.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-16 12:46:55 -0800
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.2ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 50ms (Views: 49.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-16 12:46:57 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 51ms (Views: 50.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-16 12:46:58 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 46ms (Views: 45.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-16 12:47:00 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.5ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 50ms (Views: 49.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-16 12:47:01 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 47ms (Views: 46.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-16 12:47:01 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 52ms (Views: 51.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-16 12:47:04 -0800
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.2ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 52ms (Views: 51.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-16 12:47:10 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.4ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 53ms (Views: 51.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-16 12:47:43 -0800
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.5ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 58ms (Views: 56.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-16 12:47:48 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 52ms (Views: 51.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-16 12:47:50 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 46ms (Views: 45.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-16 16:48:15 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 50ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-16 16:48:17 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 55ms (Views: 54.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-16 16:48:18 -0800
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.2ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 51ms (Views: 50.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-16 16:49:09 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 47ms (Views: 46.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-16 16:49:11 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 47ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-16 16:49:21 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 54ms (Views: 53.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-16 16:49:23 -0800
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.2ms)[0m  [1mSELECT "arts".* FROM "arts"[0m
+  Rendered arts/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 52ms (Views: 51.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-11-16 16:49:25 -0800
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 45ms (Views: 44.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-16 16:49:27 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 68ms (Views: 67.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-16 16:49:38 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  Rendered blog_posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 56ms (Views: 55.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-16 16:49:40 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 47ms (Views: 46.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-16 16:55:01 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  Rendered blog_posts/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 204ms (Views: 187.7ms | ActiveRecord: 0.5ms)
+  [1m[36mArt Load (0.3ms)[0m  [1mSELECT  "arts".* FROM "arts" WHERE "arts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBlogPost Load (0.3ms)[0m  SELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBlogPost Load (0.1ms)[0m  [1mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBlogPost Load (0.1ms)[0m  SELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBlogPost Load (0.1ms)[0m  [1mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT  "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT  "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBlogComment Load (0.5ms)[0m  SELECT "blog_comments".* FROM "blog_comments"
+  [1m[36mBlogComment Load (0.2ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 1]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  [1m[35mBlogComment Load (0.2ms)[0m  SELECT "blog_comments".* FROM "blog_comments"
+
+
+Started GET "/blog_comment" for 127.0.0.1 at 2015-11-16 17:18:48 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/blog_comment"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/pax/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/pax/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/pax/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.7ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.5ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (11.1ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (56.8ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (19.1ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (38.7ms)
+
+
+Started GET "/blog_comments" for 127.0.0.1 at 2015-11-16 17:18:50 -0800
+Processing by BlogCommentsController#index as HTML
+  [1m[35mBlogComment Load (0.2ms)[0m  SELECT "blog_comments".* FROM "blog_comments"
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered blog_comments/index.html.erb within layouts/application (40.2ms)
+Completed 200 OK in 279ms (Views: 273.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/blog_comments/1" for 127.0.0.1 at 2015-11-16 17:19:02 -0800
+Processing by BlogCommentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBlogComment Load (0.2ms)[0m  SELECT  "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBlogPost Load (0.1ms)[0m  [1mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered blog_comments/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 51ms (Views: 47.4ms | ActiveRecord: 0.3ms)
+  [1m[36m (5.9ms)[0m  [1mDROP TABLE "arts"[0m
+  [1m[35m (6.2ms)[0m  CREATE TABLE "arts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "year" integer, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "image_file_name" varchar, "image_content_type" varchar, "image_file_size" integer, "image_updated_at" datetime, "pic_file_name" varchar, "pic_content_type" varchar, "pic_file_size" integer, "pic_updated_at" datetime, "picture_file_name" varchar, "picture_content_type" varchar, "picture_file_size" integer, "picture_updated_at" datetime) 
+  [1m[36m (5.1ms)[0m  [1mDROP TABLE "blog_comments"[0m
+  [1m[35m (6.1ms)[0m  CREATE TABLE "blog_comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "body" text, "user" varchar, "blog_post_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (5.8ms)[0m  CREATE  INDEX "index_blog_comments_on_blog_post_id" ON "blog_comments" ("blog_post_id")
+  [1m[36m (4.9ms)[0m  [1mDROP TABLE "blog_posts"[0m
+  [1m[35m (6.4ms)[0m  CREATE TABLE "blog_posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (5.1ms)[0m  [1mDROP TABLE "sales"[0m
+  [1m[35m (6.0ms)[0m  CREATE TABLE "sales" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (6.1ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (6.5ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "level" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "password_digest" varchar) 
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (5.3ms)[0m  DROP TABLE "arts"
+  [1m[36m (5.1ms)[0m  [1mCREATE TABLE "arts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "year" integer, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "image_file_name" varchar, "image_content_type" varchar, "image_file_size" integer, "image_updated_at" datetime, "pic_file_name" varchar, "pic_content_type" varchar, "pic_file_size" integer, "pic_updated_at" datetime, "picture_file_name" varchar, "picture_content_type" varchar, "picture_file_size" integer, "picture_updated_at" datetime) [0m
+  [1m[35m (6.6ms)[0m  DROP TABLE "blog_comments"
+  [1m[36m (6.4ms)[0m  [1mCREATE TABLE "blog_comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "body" text, "user" varchar, "blog_post_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (4.7ms)[0m  [1mCREATE  INDEX "index_blog_comments_on_blog_post_id" ON "blog_comments" ("blog_post_id")[0m
+  [1m[35m (5.8ms)[0m  DROP TABLE "blog_posts"
+  [1m[36m (5.2ms)[0m  [1mCREATE TABLE "blog_posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (5.7ms)[0m  DROP TABLE "sales"
+  [1m[36m (5.0ms)[0m  [1mCREATE TABLE "sales" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (6.4ms)[0m  DROP TABLE "users"
+  [1m[36m (5.6ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "level" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "password_digest" varchar) [0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "arts" ("name", "year", "description", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "paaaanda"], ["year", 2009], ["description", "cute panda art"], ["image_file_name", "Beautiful-Pictures-Of-Cute-Animals-6.jpg"], ["image_content_type", "image/jpeg"], ["image_file_size", 51914], ["image_updated_at", "2015-11-13 07:42:48.000000"], ["created_at", "2015-11-17 01:19:18.704890"], ["updated_at", "2015-11-17 01:19:18.704890"]]
+  [1m[35m (5.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "arts" ("name", "year", "description", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "piggy"], ["year", 2011], ["description", "check out the snout on that oinker"], ["image_file_name", "mqdefault.jpg"], ["image_content_type", "image/jpeg"], ["image_file_size", 8856], ["image_updated_at", "2015-11-13 20:28:36.000000"], ["created_at", "2015-11-17 01:19:18.715250"], ["updated_at", "2015-11-17 01:19:18.715250"]]
+  [1m[36m (5.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "arts" ("name", "year", "description", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "hedgie"], ["year", 1998], ["description", "Hedgehog from back in the day"], ["image_file_name", "Photogenic-and-Cute-Animals-14.png"], ["image_content_type", "image/png"], ["image_file_size", 387759], ["image_updated_at", "2015-11-13 20:28:59.000000"], ["created_at", "2015-11-17 01:19:18.723367"], ["updated_at", "2015-11-17 01:19:18.723367"]]
+  [1m[35m (5.6ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "arts" ("name", "year", "description", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "huge screenshot"], ["year", 2015], ["description", "test screenshot"], ["image_file_name", "Screenshot_from_2015-11-06_10_42_44.png"], ["image_content_type", "image/png"], ["image_file_size", 615290], ["image_updated_at", "2015-11-13 20:29:46.000000"], ["created_at", "2015-11-17 01:19:18.732039"], ["updated_at", "2015-11-17 01:19:18.732039"]]
+  [1m[36m (6.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blog_comments" ("name", "body", "user", "blog_post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Love this"], ["body", "Its super cool"], ["user", "Uberfan#1"], ["blog_post_id", 1], ["created_at", "2015-11-17 01:19:18.747286"], ["updated_at", "2015-11-17 01:19:18.747286"]]
+  [1m[35m (6.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "blog_posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Welcome!"], ["body", "Welcome to Ghost Notes, the site to view and buy the artwork of Sevvy Graves"], ["created_at", "2015-11-17 01:19:18.761563"], ["updated_at", "2015-11-17 01:19:18.761563"]]
+  [1m[36m (5.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "blog_posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Progress coming along"], ["body", "the header looks really pretty, its gonna be nade to be re-done so that everything fits better and is in line, but so far so good I think! For an alpha at least"], ["created_at", "2015-11-17 01:19:18.768337"], ["updated_at", "2015-11-17 01:19:18.768337"]]
+  [1m[35m (6.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "blog_posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Long test blog post"], ["body", "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\r\n \r\n\r\nContrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32."], ["created_at", "2015-11-17 01:19:18.775975"], ["updated_at", "2015-11-17 01:19:18.775975"]]
+  [1m[36m (5.9ms)[0m  [1mcommit transaction[0m
+  [1m[36mBlogComment Load (0.4ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  [1m[36mBlogPost Load (1.3ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[35mBlogComment Load (0.2ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 1]]
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-16 17:31:18 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.2ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", "1"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", "1"]]
+  Rendered blog_posts/index.html.erb within layouts/application (23.7ms)
+Completed 200 OK in 313ms (Views: 296.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-16 17:37:41 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.2ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 297ms (Views: 282.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/blog_comments/new" for 127.0.0.1 at 2015-11-16 17:37:55 -0800
+Processing by BlogCommentsController#new as HTML
+  Rendered blog_comments/_form.html.erb (18.3ms)
+  Rendered blog_comments/new.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 67ms (Views: 66.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blog_comments" for 127.0.0.1 at 2015-11-16 17:38:11 -0800
+Processing by BlogCommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Jg4Xr9wDStDVtrHnCEpOdD6nyaVDzaw9wDUzzvIJ+shVzHo35iiDLqyvq0RxwxwBa6m1rmkF63cBeLNiG7xfbg==", "blog_comment"=>{"name"=>"hi", "body"=>"another commment for post 1", "user"=>"someone", "blog_post_id"=>"1"}, "commit"=>"Create Blog comment"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "blog_comments" ("name", "body", "user", "blog_post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "hi"], ["body", "another commment for post 1"], ["user", "someone"], ["blog_post_id", 1], ["created_at", "2015-11-17 01:38:11.593662"], ["updated_at", "2015-11-17 01:38:11.593662"]]
+  [1m[35m (9.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/blog_comments/2
+Completed 302 Found in 16ms (ActiveRecord: 10.3ms)
+
+
+Started GET "/blog_comments/2" for 127.0.0.1 at 2015-11-16 17:38:11 -0800
+Processing by BlogCommentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogComment Load (0.2ms)[0m  [1mSELECT  "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered blog_comments/show.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 58ms (Views: 54.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog_comments" for 127.0.0.1 at 2015-11-16 17:38:14 -0800
+Processing by BlogCommentsController#index as HTML
+  [1m[36mBlogComment Load (0.3ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments"[0m
+  [1m[35mBlogPost Load (0.1ms)[0m  SELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered blog_comments/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 51ms (Views: 50.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-16 17:38:15 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 57ms (Views: 56.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog_comments/new" for 127.0.0.1 at 2015-11-16 17:38:20 -0800
+Processing by BlogCommentsController#new as HTML
+  Rendered blog_comments/_form.html.erb (2.4ms)
+  Rendered blog_comments/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 59ms (Views: 58.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blog_comments" for 127.0.0.1 at 2015-11-16 17:38:29 -0800
+Processing by BlogCommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4EzTgl6Rei+equPBCF/hl4jZNXO7OVASAMy0aUoadXeTjr4aZLqz0eez+WJx1rPi3ddJeJHxF1jBgTTFo6/Q0Q==", "blog_comment"=>{"name"=>"top com", "body"=>"top com", "user"=>"top com", "blog_post_id"=>"3"}, "commit"=>"Create Blog comment"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blog_comments" ("name", "body", "user", "blog_post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "top com"], ["body", "top com"], ["user", "top com"], ["blog_post_id", 3], ["created_at", "2015-11-17 01:38:29.126455"], ["updated_at", "2015-11-17 01:38:29.126455"]]
+  [1m[35m (9.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/blog_comments/3
+Completed 302 Found in 15ms (ActiveRecord: 10.4ms)
+
+
+Started GET "/blog_comments/3" for 127.0.0.1 at 2015-11-16 17:38:29 -0800
+Processing by BlogCommentsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT  "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered blog_comments/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 56ms (Views: 54.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog_comments" for 127.0.0.1 at 2015-11-16 17:38:32 -0800
+Processing by BlogCommentsController#index as HTML
+  [1m[36mBlogComment Load (0.2ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments"[0m
+  [1m[35mBlogPost Load (0.1ms)[0m  SELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBlogPost Load (0.1ms)[0m  SELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered blog_comments/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 52ms (Views: 50.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-16 17:38:35 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 3]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 2]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 47ms (Views: 45.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-16 17:48:34 -0800
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.2ms)[0m  [1mSELECT "arts".* FROM "arts"[0m
+  Rendered arts/index.html.erb within layouts/application (23.3ms)
+Completed 200 OK in 79ms (Views: 75.5ms | ActiveRecord: 0.5ms)

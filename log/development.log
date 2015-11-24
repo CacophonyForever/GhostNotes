@@ -12469,3 +12469,2879 @@ Processing by ArtsController#index as HTML
   [1m[36mArt Load (0.2ms)[0m  [1mSELECT "arts".* FROM "arts"[0m
   Rendered arts/index.html.erb within layouts/application (23.3ms)
 Completed 200 OK in 79ms (Views: 75.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 13:47:02 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.3ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.2ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (28.3ms)
+Completed 200 OK in 316ms (Views: 292.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.self-073544b553ec6f25963497c7784a3ce69d3cf239c56512fc401cd08589255356.css?body=1" for 127.0.0.1 at 2015-11-17 13:47:03 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 13:47:03 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 13:47:03 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 13:47:03 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 13:47:03 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 13:47:03 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 13:47:03 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 13:47:03 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 13:47:03 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 13:47:03 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 14:06:30 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.3ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.2ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 168ms (Views: 166.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 14:07:22 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.3ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 61ms (Views: 59.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-073544b553ec6f25963497c7784a3ce69d3cf239c56512fc401cd08589255356.css?body=1" for 127.0.0.1 at 2015-11-17 14:07:22 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:22 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:22 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:22 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:22 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:22 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:22 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:22 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:22 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:22 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 14:07:24 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 56ms (Views: 55.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:24 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:24 -0800
+
+
+Started GET "/assets/application.self-073544b553ec6f25963497c7784a3ce69d3cf239c56512fc401cd08589255356.css?body=1" for 127.0.0.1 at 2015-11-17 14:07:24 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:24 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:24 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:24 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:24 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:24 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:24 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:24 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 14:07:25 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.3ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.2ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 80ms (Views: 78.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:25 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:25 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:25 -0800
+
+
+Started GET "/assets/application.self-073544b553ec6f25963497c7784a3ce69d3cf239c56512fc401cd08589255356.css?body=1" for 127.0.0.1 at 2015-11-17 14:07:25 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:25 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:25 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:25 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:25 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:25 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:25 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 14:07:51 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 62ms (Views: 61.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-073544b553ec6f25963497c7784a3ce69d3cf239c56512fc401cd08589255356.css?body=1" for 127.0.0.1 at 2015-11-17 14:07:51 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:51 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:51 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:51 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:51 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:51 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:51 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:51 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:51 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:51 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 14:07:52 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.3ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 71ms (Views: 69.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-073544b553ec6f25963497c7784a3ce69d3cf239c56512fc401cd08589255356.css?body=1" for 127.0.0.1 at 2015-11-17 14:07:52 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:52 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:52 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:52 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:52 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:52 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:52 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:52 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:52 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:52 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 14:07:53 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 59ms (Views: 58.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:53 -0800
+
+
+Started GET "/assets/application.self-073544b553ec6f25963497c7784a3ce69d3cf239c56512fc401cd08589255356.css?body=1" for 127.0.0.1 at 2015-11-17 14:07:53 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:53 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:53 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:53 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:53 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:53 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:53 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:53 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 14:07:53 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 14:08:34 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.2ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 74ms (Views: 73.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-073544b553ec6f25963497c7784a3ce69d3cf239c56512fc401cd08589255356.css?body=1" for 127.0.0.1 at 2015-11-17 14:08:34 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:08:34 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:08:34 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:08:34 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 14:08:34 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 14:08:34 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 14:08:34 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:08:34 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:08:34 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 14:08:34 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 14:08:55 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.2ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 65ms (Views: 64.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 14:20:56 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.3ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.2ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 84ms (Views: 82.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-df6c74f71218b6db02289a225e835a9a576b643ea55db173713c36cb0c940f0f.css?body=1" for 127.0.0.1 at 2015-11-17 14:20:56 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:20:56 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:20:56 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 14:20:56 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 14:20:56 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 14:20:56 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:20:56 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:20:56 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:20:56 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 14:20:56 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 14:20:58 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.3ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 62ms (Views: 61.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 14:20:58 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:20:58 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:20:58 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 14:20:58 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 14:20:58 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:20:58 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:20:58 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:20:58 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 14:20:58 -0800
+
+
+Started GET "/assets/application.self-df6c74f71218b6db02289a225e835a9a576b643ea55db173713c36cb0c940f0f.css?body=1" for 127.0.0.1 at 2015-11-17 14:20:58 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 14:20:59 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.3ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 72ms (Views: 70.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-df6c74f71218b6db02289a225e835a9a576b643ea55db173713c36cb0c940f0f.css?body=1" for 127.0.0.1 at 2015-11-17 14:20:59 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 14:20:59 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 14:20:59 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 14:20:59 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:20:59 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:20:59 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:20:59 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:20:59 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:20:59 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 14:20:59 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 14:21:00 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.3ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 70ms (Views: 68.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-df6c74f71218b6db02289a225e835a9a576b643ea55db173713c36cb0c940f0f.css?body=1" for 127.0.0.1 at 2015-11-17 14:21:00 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 14:21:00 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 14:21:00 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:21:00 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:21:00 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 14:21:00 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:21:00 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:21:00 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 14:21:00 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:21:00 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 14:21:16 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.3ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 62ms (Views: 60.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-df6c74f71218b6db02289a225e835a9a576b643ea55db173713c36cb0c940f0f.css?body=1" for 127.0.0.1 at 2015-11-17 14:21:16 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 14:21:16 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 14:21:16 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 14:21:16 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:21:16 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:21:16 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:21:16 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:21:16 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:21:16 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 14:21:16 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 14:21:43 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 70ms (Views: 69.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-df6c74f71218b6db02289a225e835a9a576b643ea55db173713c36cb0c940f0f.css?body=1" for 127.0.0.1 at 2015-11-17 14:21:43 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 14:21:43 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:21:43 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:21:43 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 14:21:43 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 14:21:43 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:21:43 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:21:43 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:21:43 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 14:21:43 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 14:25:49 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.3ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.2ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.2ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.2ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (26.1ms)
+Completed 200 OK in 128ms (Views: 126.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-6f56455a3b78f8aca121569371feafc02175931510aacc8c0de854277f0e5765.css?body=1" for 127.0.0.1 at 2015-11-17 14:25:50 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 14:25:50 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 14:25:50 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 14:25:50 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:25:50 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:25:50 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:25:50 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:25:50 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:25:50 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 14:25:50 -0800
+
+
+Started GET "/assets/blogcolumntop-6133e5cea647cbd9b676bfbca1f5e4ff9d2b82eeb151a31966bcffc667de0e1a.png" for 127.0.0.1 at 2015-11-17 14:25:50 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 14:26:41 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.3ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.2ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (48.1ms)
+Completed 200 OK in 128ms (Views: 126.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/blogcolumn-2c96496243174dfa0f4582ca225b3bbd0411e9b235b2c46bc7133c775139ca4f.png" for 127.0.0.1 at 2015-11-17 14:26:41 -0800
+
+
+Started GET "/assets/blogcolumnbottom-088a70a6b79d0c7b85e176bb83e6fa02e49f3acd35ccfdd5cb4bdd596efae559.png" for 127.0.0.1 at 2015-11-17 14:26:41 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 14:27:55 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.2ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 83ms (Views: 81.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 14:27:55 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 14:27:55 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:27:55 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:27:55 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:27:55 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 14:27:55 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:27:55 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:27:55 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 14:27:55 -0800
+
+
+Started GET "/assets/application.self-6f56455a3b78f8aca121569371feafc02175931510aacc8c0de854277f0e5765.css?body=1" for 127.0.0.1 at 2015-11-17 14:27:55 -0800
+
+
+Started GET "/assets/blogcolumntop-6133e5cea647cbd9b676bfbca1f5e4ff9d2b82eeb151a31966bcffc667de0e1a.png" for 127.0.0.1 at 2015-11-17 14:27:55 -0800
+
+
+Started GET "/assets/blogcolumn-2c96496243174dfa0f4582ca225b3bbd0411e9b235b2c46bc7133c775139ca4f.png" for 127.0.0.1 at 2015-11-17 14:27:55 -0800
+
+
+Started GET "/assets/blogcolumnbottom-088a70a6b79d0c7b85e176bb83e6fa02e49f3acd35ccfdd5cb4bdd596efae559.png" for 127.0.0.1 at 2015-11-17 14:27:55 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 14:27:57 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 76ms (Views: 74.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 14:27:57 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 14:27:57 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 14:27:57 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:27:57 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:27:57 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:27:57 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:27:57 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:27:57 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 14:27:57 -0800
+
+
+Started GET "/assets/application.self-6f56455a3b78f8aca121569371feafc02175931510aacc8c0de854277f0e5765.css?body=1" for 127.0.0.1 at 2015-11-17 14:27:57 -0800
+
+
+Started GET "/assets/blogcolumntop-6133e5cea647cbd9b676bfbca1f5e4ff9d2b82eeb151a31966bcffc667de0e1a.png" for 127.0.0.1 at 2015-11-17 14:27:57 -0800
+
+
+Started GET "/assets/blogcolumn-2c96496243174dfa0f4582ca225b3bbd0411e9b235b2c46bc7133c775139ca4f.png" for 127.0.0.1 at 2015-11-17 14:27:57 -0800
+
+
+Started GET "/assets/blogcolumnbottom-088a70a6b79d0c7b85e176bb83e6fa02e49f3acd35ccfdd5cb4bdd596efae559.png" for 127.0.0.1 at 2015-11-17 14:27:57 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 14:28:07 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 84ms (Views: 82.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 14:29:28 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.3ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.2ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (55.0ms)
+Completed 200 OK in 131ms (Views: 129.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-6f56455a3b78f8aca121569371feafc02175931510aacc8c0de854277f0e5765.css?body=1" for 127.0.0.1 at 2015-11-17 14:29:28 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 14:29:28 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 14:29:28 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 14:29:28 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:29:28 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:29:28 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:29:28 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:29:28 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:29:28 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 14:29:28 -0800
+
+
+Started GET "/assets/blogcolumntop-6133e5cea647cbd9b676bfbca1f5e4ff9d2b82eeb151a31966bcffc667de0e1a.png" for 127.0.0.1 at 2015-11-17 14:29:28 -0800
+
+
+Started GET "/assets/blogcolumnbottom-088a70a6b79d0c7b85e176bb83e6fa02e49f3acd35ccfdd5cb4bdd596efae559.png" for 127.0.0.1 at 2015-11-17 14:29:28 -0800
+
+
+Started GET "/assets/blogcolumn-2c96496243174dfa0f4582ca225b3bbd0411e9b235b2c46bc7133c775139ca4f.png" for 127.0.0.1 at 2015-11-17 14:29:28 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 14:29:45 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.3ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (38.1ms)
+Completed 200 OK in 99ms (Views: 97.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 14:45:29 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (34.4ms)
+Completed 200 OK in 109ms (Views: 108.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-ea80faffea3f295f7cdcc7daf08cec9c549aa80dbee9f57e19ee3d5e7863052b.css?body=1" for 127.0.0.1 at 2015-11-17 14:45:29 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 14:46:35 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.5ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (35.4ms)
+Completed 200 OK in 110ms (Views: 109.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-9474800108360cdd716fab43f4548c111dfbe31b621411052bad15bf9698ccd0.css?body=1" for 127.0.0.1 at 2015-11-17 14:46:35 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:46:35 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:46:35 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:46:35 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:46:35 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 14:46:35 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 14:46:35 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 14:46:35 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:46:35 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 14:46:35 -0800
+
+
+Started GET "/assets/blogcolumn-2c96496243174dfa0f4582ca225b3bbd0411e9b235b2c46bc7133c775139ca4f.png" for 127.0.0.1 at 2015-11-17 14:46:35 -0800
+
+
+Started GET "/assets/blogcolumntop-6133e5cea647cbd9b676bfbca1f5e4ff9d2b82eeb151a31966bcffc667de0e1a.png" for 127.0.0.1 at 2015-11-17 14:46:35 -0800
+
+
+Started GET "/assets/blogcolumnbottom-088a70a6b79d0c7b85e176bb83e6fa02e49f3acd35ccfdd5cb4bdd596efae559.png" for 127.0.0.1 at 2015-11-17 14:46:35 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 14:47:12 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (45.4ms)
+Completed 200 OK in 109ms (Views: 107.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-6cda94f0d2ed22d0412373513c56fda43a68699bc6f3a6da46a7b47f3d82f350.css?body=1" for 127.0.0.1 at 2015-11-17 14:47:12 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 14:48:05 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (37.1ms)
+Completed 200 OK in 112ms (Views: 110.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-35cfa40cb316476b3ca3a1ec81be766f57648e29ee77472bdda703504c451ae8.css?body=1" for 127.0.0.1 at 2015-11-17 14:48:05 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 14:49:28 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (34.2ms)
+Completed 200 OK in 107ms (Views: 106.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-949c375cebad9af284839daf6548894b4de56805dec8a848072cb722ab1c31a9.css?body=1" for 127.0.0.1 at 2015-11-17 14:49:28 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 14:49:52 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (33.9ms)
+Completed 200 OK in 110ms (Views: 108.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-cd2e5c8477a6c2c3cba26a8fdf8cace2a61da1ee12a16353cbb23a40cc7bce83.css?body=1" for 127.0.0.1 at 2015-11-17 14:49:52 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 14:50:07 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.2ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (46.5ms)
+Completed 200 OK in 130ms (Views: 128.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-a7a34f04ce50cb93af5a1aa3a38b7795063353d9806b9610c44b60a102ba5919.css?body=1" for 127.0.0.1 at 2015-11-17 14:50:08 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 14:50:08 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:50:08 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:50:08 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:50:08 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 14:50:08 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 14:50:08 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:50:08 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:50:08 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 14:50:08 -0800
+
+
+Started GET "/assets/blogcolumntop-6133e5cea647cbd9b676bfbca1f5e4ff9d2b82eeb151a31966bcffc667de0e1a.png" for 127.0.0.1 at 2015-11-17 14:50:08 -0800
+
+
+Started GET "/assets/blogcolumn-2c96496243174dfa0f4582ca225b3bbd0411e9b235b2c46bc7133c775139ca4f.png" for 127.0.0.1 at 2015-11-17 14:50:08 -0800
+
+
+Started GET "/assets/blogcolumnbottom-088a70a6b79d0c7b85e176bb83e6fa02e49f3acd35ccfdd5cb4bdd596efae559.png" for 127.0.0.1 at 2015-11-17 14:50:08 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 14:50:57 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 95ms (Views: 93.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 14:52:00 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 98ms (Views: 97.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-a7a34f04ce50cb93af5a1aa3a38b7795063353d9806b9610c44b60a102ba5919.css?body=1" for 127.0.0.1 at 2015-11-17 14:52:00 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 14:52:00 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:52:00 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:52:00 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:52:00 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 14:52:00 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 14:52:00 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:52:00 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:52:00 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 14:52:00 -0800
+
+
+Started GET "/assets/blogcolumntop-6133e5cea647cbd9b676bfbca1f5e4ff9d2b82eeb151a31966bcffc667de0e1a.png" for 127.0.0.1 at 2015-11-17 14:52:00 -0800
+
+
+Started GET "/assets/blogcolumn-2c96496243174dfa0f4582ca225b3bbd0411e9b235b2c46bc7133c775139ca4f.png" for 127.0.0.1 at 2015-11-17 14:52:00 -0800
+
+
+Started GET "/assets/blogcolumnbottom-088a70a6b79d0c7b85e176bb83e6fa02e49f3acd35ccfdd5cb4bdd596efae559.png" for 127.0.0.1 at 2015-11-17 14:52:00 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 14:52:02 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (38.3ms)
+Completed 200 OK in 97ms (Views: 96.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-a7a34f04ce50cb93af5a1aa3a38b7795063353d9806b9610c44b60a102ba5919.css?body=1" for 127.0.0.1 at 2015-11-17 14:52:02 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 14:52:02 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 14:52:02 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 14:52:02 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:52:02 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:52:02 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:52:02 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:52:02 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:52:02 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 14:52:02 -0800
+
+
+Started GET "/assets/blogcolumntop-6133e5cea647cbd9b676bfbca1f5e4ff9d2b82eeb151a31966bcffc667de0e1a.png" for 127.0.0.1 at 2015-11-17 14:52:02 -0800
+
+
+Started GET "/assets/blogcolumn-2c96496243174dfa0f4582ca225b3bbd0411e9b235b2c46bc7133c775139ca4f.png" for 127.0.0.1 at 2015-11-17 14:52:02 -0800
+
+
+Started GET "/assets/blogcolumnbottom-088a70a6b79d0c7b85e176bb83e6fa02e49f3acd35ccfdd5cb4bdd596efae559.png" for 127.0.0.1 at 2015-11-17 14:52:02 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 14:52:03 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (37.6ms)
+Completed 200 OK in 103ms (Views: 101.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 14:52:03 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 14:52:03 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:52:03 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:52:03 -0800
+
+
+Started GET "/assets/application.self-a7a34f04ce50cb93af5a1aa3a38b7795063353d9806b9610c44b60a102ba5919.css?body=1" for 127.0.0.1 at 2015-11-17 14:52:03 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 14:52:03 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:52:03 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:52:03 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 14:52:03 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 14:52:03 -0800
+
+
+Started GET "/assets/blogcolumntop-6133e5cea647cbd9b676bfbca1f5e4ff9d2b82eeb151a31966bcffc667de0e1a.png" for 127.0.0.1 at 2015-11-17 14:52:04 -0800
+
+
+Started GET "/assets/blogcolumnbottom-088a70a6b79d0c7b85e176bb83e6fa02e49f3acd35ccfdd5cb4bdd596efae559.png" for 127.0.0.1 at 2015-11-17 14:52:04 -0800
+
+
+Started GET "/assets/blogcolumn-2c96496243174dfa0f4582ca225b3bbd0411e9b235b2c46bc7133c775139ca4f.png" for 127.0.0.1 at 2015-11-17 14:52:04 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 14:53:02 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (35.3ms)
+Completed 200 OK in 96ms (Views: 94.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 14:53:18 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.3ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (32.6ms)
+Completed 200 OK in 93ms (Views: 92.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 14:54:12 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (38.2ms)
+Completed 200 OK in 96ms (Views: 94.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 14:55:49 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (32.8ms)
+Completed 200 OK in 100ms (Views: 98.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 14:57:20 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 83ms (Views: 81.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 14:58:40 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (24.6ms)
+Completed 200 OK in 77ms (Views: 76.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 15:00:03 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.3ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (24.8ms)
+Completed 200 OK in 93ms (Views: 92.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 15:01:06 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 75ms (Views: 73.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 15:01:41 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.4ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.2ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 59ms (Views: 57.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-17 15:01:44 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 56ms (Views: 55.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-17 15:01:46 -0800
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.4ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 72ms (Views: 67.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-17 15:01:47 -0800
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.3ms)[0m  [1mSELECT "arts".* FROM "arts"[0m
+  Rendered arts/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 61ms (Views: 60.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-11-17 15:01:49 -0800
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 58ms (Views: 57.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 15:01:52 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 59ms (Views: 58.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 15:01:55 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 61ms (Views: 60.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 15:01:56 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 63ms (Views: 62.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 15:01:56 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.3ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.2ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 58ms (Views: 56.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 15:01:57 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 69ms (Views: 67.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 15:01:57 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 74ms (Views: 73.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 15:01:58 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 71ms (Views: 70.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 15:01:58 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 54ms (Views: 53.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 15:01:58 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.4ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 55ms (Views: 53.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 15:01:59 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 65ms (Views: 63.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 15:01:59 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.0ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 56ms (Views: 55.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 15:02:00 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 59ms (Views: 57.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 15:02:00 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.3ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 64ms (Views: 62.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 15:02:01 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.0ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 62ms (Views: 61.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 16:53:14 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 69ms (Views: 67.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 16:54:00 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 54ms (Views: 53.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 16:54:01 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.2ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 58ms (Views: 57.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 16:54:02 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.0ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 53ms (Views: 52.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 16:54:03 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 72ms (Views: 71.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 16:54:04 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 58ms (Views: 56.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-17 16:54:06 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 47ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-17 16:54:07 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 53ms (Views: 52.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-17 16:54:09 -0800
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.2ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 52ms (Views: 51.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-17 16:54:10 -0800
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.2ms)[0m  [1mSELECT "arts".* FROM "arts"[0m
+  Rendered arts/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 54ms (Views: 53.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-17 16:54:11 -0800
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.2ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 80ms (Views: 79.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-11-17 16:54:14 -0800
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 45ms (Views: 44.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-11-17 16:54:15 -0800
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 59ms (Views: 58.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-11-17 16:54:15 -0800
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 55ms (Views: 54.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-11-17 16:54:17 -0800
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 50ms (Views: 49.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-17 16:54:18 -0800
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.3ms)[0m  [1mSELECT "arts".* FROM "arts"[0m
+  Rendered arts/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 51ms (Views: 50.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 16:54:25 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 54ms (Views: 53.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 16:54:26 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 59ms (Views: 58.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog%5C" for 127.0.0.1 at 2015-11-17 17:12:22 -0800
+
+ActionController::RoutingError (No route matches [GET] "/blog%5C"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/pax/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/pax/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/pax/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.7ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.9ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (51.3ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (22.3ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (44.4ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 17:12:25 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.3ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.2ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  Rendered blog_posts/index.html.erb within layouts/application (8.0ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (undefined method `title' for #<BlogComment:0x007f5b3566cb90>):
+    22: 	<% @comments = BlogComment.where(:blog_post_id => blog_post.id) %>
+    23: 	<% @comments.each do |comment| %>
+    24: 	<div class="commentpost">
+    25: 	<h2 class="commenttitle"><%= comment.title %> </h2>
+    26:         <hr />
+    27: 	<h3 class="commentauthor">by: <%= comment.author %> </h3>
+    28: 	<hr />
+  app/views/blog_posts/index.html.erb:25:in `block (2 levels) in _app_views_blog_posts_index_html_erb___372358606310050996_70014859095820'
+  app/views/blog_posts/index.html.erb:23:in `block in _app_views_blog_posts_index_html_erb___372358606310050996_70014859095820'
+  app/views/blog_posts/index.html.erb:6:in `_app_views_blog_posts_index_html_erb___372358606310050996_70014859095820'
+
+
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.7ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (16.7ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (33.3ms)
+
+
+Started GET "/arts" for 127.0.0.1 at 2015-11-17 17:14:25 -0800
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.3ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 64ms (Views: 62.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 17:14:27 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 3]]
+  Rendered blog_posts/index.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `author' for #<BlogComment:0x007f5b30c5e990>):
+    24: 	<div class="commentpost">
+    25: 	<h2 class="commenttitle"><%= comment.name %> </h2>
+    26:         <hr />
+    27: 	<h3 class="commentauthor">by: <%= comment.author %> </h3>
+    28: 	<hr />
+    29:         <p><%= comment.body %> </p>
+    30: 	</div>
+  app/views/blog_posts/index.html.erb:27:in `block (2 levels) in _app_views_blog_posts_index_html_erb___372358606310050996_70014819016420'
+  app/views/blog_posts/index.html.erb:23:in `block in _app_views_blog_posts_index_html_erb___372358606310050996_70014819016420'
+  app/views/blog_posts/index.html.erb:6:in `_app_views_blog_posts_index_html_erb___372358606310050996_70014819016420'
+
+
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.9ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (15.9ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (31.8ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 17:14:27 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 3]]
+  Rendered blog_posts/index.html.erb within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `author' for #<BlogComment:0x007f5b300080d8>):
+    24: 	<div class="commentpost">
+    25: 	<h2 class="commenttitle"><%= comment.name %> </h2>
+    26:         <hr />
+    27: 	<h3 class="commentauthor">by: <%= comment.author %> </h3>
+    28: 	<hr />
+    29:         <p><%= comment.body %> </p>
+    30: 	</div>
+  app/views/blog_posts/index.html.erb:27:in `block (2 levels) in _app_views_blog_posts_index_html_erb___372358606310050996_70014817412560'
+  app/views/blog_posts/index.html.erb:23:in `block in _app_views_blog_posts_index_html_erb___372358606310050996_70014817412560'
+  app/views/blog_posts/index.html.erb:6:in `_app_views_blog_posts_index_html_erb___372358606310050996_70014817412560'
+
+
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.0ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (16.2ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (34.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 17:14:40 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 3]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 2]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 83ms (Views: 81.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 17:16:44 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 3]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 2]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 69ms (Views: 67.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-8249824c8b4ede2e22373da107321c0be3a0632170fec529fef8415e42a2685c.css?body=1" for 127.0.0.1 at 2015-11-17 17:16:44 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 17:17:03 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  [1m[35mBlogComment Load (0.2ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 3]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 2]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 94ms (Views: 93.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-a19cfdb44d9c139418972ec1f060be4c4814307314791a48165acb9d92350e2f.css?body=1" for 127.0.0.1 at 2015-11-17 17:17:04 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 17:18:14 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 3]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 2]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 74ms (Views: 72.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-d55c9e11c0fd8436adb410d21b8d0671b7b03a9f2929819f4c11a88361056a82.css?body=1" for 127.0.0.1 at 2015-11-17 17:18:14 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 17:18:14 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 17:18:14 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 17:18:14 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:18:14 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:18:14 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:18:14 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:18:14 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:18:14 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 17:18:14 -0800
+
+
+Started GET "/assets/blogcolumntop-6133e5cea647cbd9b676bfbca1f5e4ff9d2b82eeb151a31966bcffc667de0e1a.png" for 127.0.0.1 at 2015-11-17 17:18:15 -0800
+
+
+Started GET "/assets/blogcolumnbottom-088a70a6b79d0c7b85e176bb83e6fa02e49f3acd35ccfdd5cb4bdd596efae559.png" for 127.0.0.1 at 2015-11-17 17:18:15 -0800
+
+
+Started GET "/assets/blogcolumn-2c96496243174dfa0f4582ca225b3bbd0411e9b235b2c46bc7133c775139ca4f.png" for 127.0.0.1 at 2015-11-17 17:18:15 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 17:19:18 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 3]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 2]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 104ms (Views: 102.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-0633f57ea817841ef74462a26e297ce095311d589f653e751f35aecb47ed644e.css?body=1" for 127.0.0.1 at 2015-11-17 17:19:18 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 17:20:38 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 3]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 2]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 80ms (Views: 78.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-17 17:21:35 -0800
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.2ms)[0m  [1mSELECT "arts".* FROM "arts"[0m
+  Rendered arts/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 62ms (Views: 60.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 17:21:39 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 53ms (Views: 52.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 17:22:11 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 79ms (Views: 78.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-fc6093d7a06d68abb464b9404ba58fe01e7dc65efdbb554a10c80ec863c6f90b.css?body=1" for 127.0.0.1 at 2015-11-17 17:22:11 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 17:22:11 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:22:11 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:22:11 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 17:22:11 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:22:11 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 17:22:11 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:22:11 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:22:11 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 17:22:11 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 17:22:14 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 56ms (Views: 55.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 17:22:14 -0800
+
+
+Started GET "/assets/application.self-fc6093d7a06d68abb464b9404ba58fe01e7dc65efdbb554a10c80ec863c6f90b.css?body=1" for 127.0.0.1 at 2015-11-17 17:22:14 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 17:22:14 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:22:14 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 17:22:14 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:22:14 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:22:14 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:22:14 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:22:14 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 17:22:14 -0800
+
+
+Started GET "/assets/blogcolumntop-6133e5cea647cbd9b676bfbca1f5e4ff9d2b82eeb151a31966bcffc667de0e1a.png" for 127.0.0.1 at 2015-11-17 17:22:14 -0800
+
+
+Started GET "/assets/blogcolumn-2c96496243174dfa0f4582ca225b3bbd0411e9b235b2c46bc7133c775139ca4f.png" for 127.0.0.1 at 2015-11-17 17:22:14 -0800
+
+
+Started GET "/assets/blogcolumnbottom-088a70a6b79d0c7b85e176bb83e6fa02e49f3acd35ccfdd5cb4bdd596efae559.png" for 127.0.0.1 at 2015-11-17 17:22:14 -0800
+
+
+Started GET "/blog_comments/new" for 127.0.0.1 at 2015-11-17 17:22:44 -0800
+Processing by BlogCommentsController#new as HTML
+  Rendered blog_comments/_form.html.erb (12.3ms)
+  Rendered blog_comments/new.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 66ms (Views: 64.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blog_comments" for 127.0.0.1 at 2015-11-17 17:23:25 -0800
+Processing by BlogCommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vTRr0nvw/v6lPvAftQ6bdHjRFKCCUlTGpBUBOLbkIQzO9gZKQds3ANwn6rzMh8kBLd9oq6iaE4xlWIGUX1GEqg==", "blog_comment"=>{"name"=>"What is this?", "body"=>"I don't understand what the fuck this god damned blog post is supposed to say. Is it just cryptic, or trying to be edgy or something? eiher way, it goes with the website: sucky!", "user"=>"troll6969", "blog_post_id"=>"3"}, "commit"=>"Create Blog comment"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "blog_comments" ("name", "body", "user", "blog_post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "What is this?"], ["body", "I don't understand what the fuck this god damned blog post is supposed to say. Is it just cryptic, or trying to be edgy or something? eiher way, it goes with the website: sucky!"], ["user", "troll6969"], ["blog_post_id", 3], ["created_at", "2015-11-18 01:23:25.652114"], ["updated_at", "2015-11-18 01:23:25.652114"]]
+  [1m[35m (14.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/blog_comments/4
+Completed 302 Found in 18ms (ActiveRecord: 14.7ms)
+
+
+Started GET "/blog_comments/4" for 127.0.0.1 at 2015-11-17 17:23:25 -0800
+Processing by BlogCommentsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBlogComment Load (0.2ms)[0m  [1mSELECT  "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered blog_comments/show.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 60ms (Views: 56.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 17:23:27 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 3]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 2]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 53ms (Views: 52.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 17:24:59 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 3]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 2]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 70ms (Views: 68.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 17:25:03 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 3]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 2]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 60ms (Views: 58.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:03 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:03 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:03 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:03 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:03 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:03 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:03 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:03 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:03 -0800
+
+
+Started GET "/assets/application.self-fc6093d7a06d68abb464b9404ba58fe01e7dc65efdbb554a10c80ec863c6f90b.css?body=1" for 127.0.0.1 at 2015-11-17 17:25:03 -0800
+
+
+Started GET "/assets/blogcolumntop-6133e5cea647cbd9b676bfbca1f5e4ff9d2b82eeb151a31966bcffc667de0e1a.png" for 127.0.0.1 at 2015-11-17 17:25:03 -0800
+
+
+Started GET "/assets/blogcolumnbottom-088a70a6b79d0c7b85e176bb83e6fa02e49f3acd35ccfdd5cb4bdd596efae559.png" for 127.0.0.1 at 2015-11-17 17:25:03 -0800
+
+
+Started GET "/assets/blogcolumn-2c96496243174dfa0f4582ca225b3bbd0411e9b235b2c46bc7133c775139ca4f.png" for 127.0.0.1 at 2015-11-17 17:25:03 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 17:25:06 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 3]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 2]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 66ms (Views: 64.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:06 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:06 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:06 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:06 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:06 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:06 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:06 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:06 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:06 -0800
+
+
+Started GET "/assets/application.self-fc6093d7a06d68abb464b9404ba58fe01e7dc65efdbb554a10c80ec863c6f90b.css?body=1" for 127.0.0.1 at 2015-11-17 17:25:06 -0800
+
+
+Started GET "/assets/blogcolumnbottom-088a70a6b79d0c7b85e176bb83e6fa02e49f3acd35ccfdd5cb4bdd596efae559.png" for 127.0.0.1 at 2015-11-17 17:25:06 -0800
+
+
+Started GET "/assets/blogcolumntop-6133e5cea647cbd9b676bfbca1f5e4ff9d2b82eeb151a31966bcffc667de0e1a.png" for 127.0.0.1 at 2015-11-17 17:25:06 -0800
+
+
+Started GET "/assets/blogcolumn-2c96496243174dfa0f4582ca225b3bbd0411e9b235b2c46bc7133c775139ca4f.png" for 127.0.0.1 at 2015-11-17 17:25:06 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 17:25:07 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  [1m[35mBlogComment Load (0.3ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 3]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 2]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 63ms (Views: 62.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-fc6093d7a06d68abb464b9404ba58fe01e7dc65efdbb554a10c80ec863c6f90b.css?body=1" for 127.0.0.1 at 2015-11-17 17:25:07 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:07 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:07 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:07 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:07 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:07 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:07 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:07 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:07 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:07 -0800
+
+
+Started GET "/assets/blogcolumn-2c96496243174dfa0f4582ca225b3bbd0411e9b235b2c46bc7133c775139ca4f.png" for 127.0.0.1 at 2015-11-17 17:25:07 -0800
+
+
+Started GET "/assets/blogcolumntop-6133e5cea647cbd9b676bfbca1f5e4ff9d2b82eeb151a31966bcffc667de0e1a.png" for 127.0.0.1 at 2015-11-17 17:25:07 -0800
+
+
+Started GET "/assets/blogcolumnbottom-088a70a6b79d0c7b85e176bb83e6fa02e49f3acd35ccfdd5cb4bdd596efae559.png" for 127.0.0.1 at 2015-11-17 17:25:07 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 17:25:19 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 3]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 2]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (22.5ms)
+Completed 200 OK in 87ms (Views: 85.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 17:25:24 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 3]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 2]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 58ms (Views: 56.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-fc6093d7a06d68abb464b9404ba58fe01e7dc65efdbb554a10c80ec863c6f90b.css?body=1" for 127.0.0.1 at 2015-11-17 17:25:24 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:24 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:24 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:24 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:24 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:24 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:24 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:24 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:24 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:24 -0800
+
+
+Started GET "/assets/blogcolumnbottom-088a70a6b79d0c7b85e176bb83e6fa02e49f3acd35ccfdd5cb4bdd596efae559.png" for 127.0.0.1 at 2015-11-17 17:25:24 -0800
+
+
+Started GET "/assets/blogcolumn-2c96496243174dfa0f4582ca225b3bbd0411e9b235b2c46bc7133c775139ca4f.png" for 127.0.0.1 at 2015-11-17 17:25:24 -0800
+
+
+Started GET "/assets/blogcolumntop-6133e5cea647cbd9b676bfbca1f5e4ff9d2b82eeb151a31966bcffc667de0e1a.png" for 127.0.0.1 at 2015-11-17 17:25:24 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 17:25:38 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  [1m[35mBlogComment Load (0.2ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 3]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 2]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (23.3ms)
+Completed 200 OK in 93ms (Views: 91.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 17:25:42 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 3]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 2]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 88ms (Views: 87.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:42 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:42 -0800
+
+
+Started GET "/assets/application.self-fc6093d7a06d68abb464b9404ba58fe01e7dc65efdbb554a10c80ec863c6f90b.css?body=1" for 127.0.0.1 at 2015-11-17 17:25:42 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:42 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:42 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:42 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:42 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:42 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:42 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:42 -0800
+
+
+Started GET "/assets/blogcolumntop-6133e5cea647cbd9b676bfbca1f5e4ff9d2b82eeb151a31966bcffc667de0e1a.png" for 127.0.0.1 at 2015-11-17 17:25:43 -0800
+
+
+Started GET "/assets/blogcolumnbottom-088a70a6b79d0c7b85e176bb83e6fa02e49f3acd35ccfdd5cb4bdd596efae559.png" for 127.0.0.1 at 2015-11-17 17:25:43 -0800
+
+
+Started GET "/assets/blogcolumn-2c96496243174dfa0f4582ca225b3bbd0411e9b235b2c46bc7133c775139ca4f.png" for 127.0.0.1 at 2015-11-17 17:25:43 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 17:25:44 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 3]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 2]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 63ms (Views: 62.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-fc6093d7a06d68abb464b9404ba58fe01e7dc65efdbb554a10c80ec863c6f90b.css?body=1" for 127.0.0.1 at 2015-11-17 17:25:44 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:44 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:44 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:44 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:44 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:44 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:44 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:44 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:44 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:44 -0800
+
+
+Started GET "/assets/blogcolumntop-6133e5cea647cbd9b676bfbca1f5e4ff9d2b82eeb151a31966bcffc667de0e1a.png" for 127.0.0.1 at 2015-11-17 17:25:44 -0800
+
+
+Started GET "/assets/blogcolumn-2c96496243174dfa0f4582ca225b3bbd0411e9b235b2c46bc7133c775139ca4f.png" for 127.0.0.1 at 2015-11-17 17:25:44 -0800
+
+
+Started GET "/assets/blogcolumnbottom-088a70a6b79d0c7b85e176bb83e6fa02e49f3acd35ccfdd5cb4bdd596efae559.png" for 127.0.0.1 at 2015-11-17 17:25:44 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 17:25:47 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  [1m[35mBlogComment Load (0.2ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 3]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 2]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 86ms (Views: 84.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-fc6093d7a06d68abb464b9404ba58fe01e7dc65efdbb554a10c80ec863c6f90b.css?body=1" for 127.0.0.1 at 2015-11-17 17:25:47 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:47 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:47 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:47 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:47 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:47 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:47 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:47 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:47 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:47 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 17:25:51 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 3]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 2]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 77ms (Views: 76.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-fc6093d7a06d68abb464b9404ba58fe01e7dc65efdbb554a10c80ec863c6f90b.css?body=1" for 127.0.0.1 at 2015-11-17 17:25:51 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:51 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:51 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:51 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:51 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:51 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:51 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:51 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:51 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 17:25:51 -0800
+
+
+Started GET "/assets/blogcolumnbottom-088a70a6b79d0c7b85e176bb83e6fa02e49f3acd35ccfdd5cb4bdd596efae559.png" for 127.0.0.1 at 2015-11-17 17:25:51 -0800
+
+
+Started GET "/assets/blogcolumntop-6133e5cea647cbd9b676bfbca1f5e4ff9d2b82eeb151a31966bcffc667de0e1a.png" for 127.0.0.1 at 2015-11-17 17:25:51 -0800
+
+
+Started GET "/assets/blogcolumn-2c96496243174dfa0f4582ca225b3bbd0411e9b235b2c46bc7133c775139ca4f.png" for 127.0.0.1 at 2015-11-17 17:25:51 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 17:26:51 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 3]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 2]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 74ms (Views: 72.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-fc6093d7a06d68abb464b9404ba58fe01e7dc65efdbb554a10c80ec863c6f90b.css?body=1" for 127.0.0.1 at 2015-11-17 17:26:51 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 17:26:51 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:26:51 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:26:51 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 17:26:51 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:26:51 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 17:26:51 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:26:51 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:26:51 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 17:26:51 -0800
+
+
+Started GET "/assets/blogcolumntop-6133e5cea647cbd9b676bfbca1f5e4ff9d2b82eeb151a31966bcffc667de0e1a.png" for 127.0.0.1 at 2015-11-17 17:26:51 -0800
+
+
+Started GET "/assets/blogcolumnbottom-088a70a6b79d0c7b85e176bb83e6fa02e49f3acd35ccfdd5cb4bdd596efae559.png" for 127.0.0.1 at 2015-11-17 17:26:51 -0800
+
+
+Started GET "/assets/blogcolumn-2c96496243174dfa0f4582ca225b3bbd0411e9b235b2c46bc7133c775139ca4f.png" for 127.0.0.1 at 2015-11-17 17:26:51 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 17:26:53 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 3]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 2]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 93ms (Views: 91.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 17:26:53 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:26:53 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 17:26:53 -0800
+
+
+Started GET "/assets/application.self-fc6093d7a06d68abb464b9404ba58fe01e7dc65efdbb554a10c80ec863c6f90b.css?body=1" for 127.0.0.1 at 2015-11-17 17:26:53 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:26:53 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 17:26:53 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:26:53 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:26:53 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:26:53 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 17:26:53 -0800
+
+
+Started GET "/assets/blogcolumntop-6133e5cea647cbd9b676bfbca1f5e4ff9d2b82eeb151a31966bcffc667de0e1a.png" for 127.0.0.1 at 2015-11-17 17:26:53 -0800
+
+
+Started GET "/assets/blogcolumn-2c96496243174dfa0f4582ca225b3bbd0411e9b235b2c46bc7133c775139ca4f.png" for 127.0.0.1 at 2015-11-17 17:26:53 -0800
+
+
+Started GET "/assets/blogcolumnbottom-088a70a6b79d0c7b85e176bb83e6fa02e49f3acd35ccfdd5cb4bdd596efae559.png" for 127.0.0.1 at 2015-11-17 17:26:53 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 17:27:18 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 3]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 2]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 66ms (Views: 65.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 17:27:33 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 3]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 2]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 91ms (Views: 90.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-fc6093d7a06d68abb464b9404ba58fe01e7dc65efdbb554a10c80ec863c6f90b.css?body=1" for 127.0.0.1 at 2015-11-17 17:27:34 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 17:27:34 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:27:34 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:27:34 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 17:27:34 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 17:27:34 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:27:34 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:27:34 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:27:34 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 17:27:34 -0800
+
+
+Started GET "/assets/blogcolumn-2c96496243174dfa0f4582ca225b3bbd0411e9b235b2c46bc7133c775139ca4f.png" for 127.0.0.1 at 2015-11-17 17:27:34 -0800
+
+
+Started GET "/assets/blogcolumntop-6133e5cea647cbd9b676bfbca1f5e4ff9d2b82eeb151a31966bcffc667de0e1a.png" for 127.0.0.1 at 2015-11-17 17:27:34 -0800
+
+
+Started GET "/assets/blogcolumnbottom-088a70a6b79d0c7b85e176bb83e6fa02e49f3acd35ccfdd5cb4bdd596efae559.png" for 127.0.0.1 at 2015-11-17 17:27:34 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 17:27:35 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 3]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 2]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 93ms (Views: 92.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-fc6093d7a06d68abb464b9404ba58fe01e7dc65efdbb554a10c80ec863c6f90b.css?body=1" for 127.0.0.1 at 2015-11-17 17:27:35 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 17:27:35 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 17:27:35 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:27:35 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 17:27:35 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:27:35 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:27:35 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:27:35 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 17:27:35 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:27:35 -0800
+
+
+Started GET "/assets/blogcolumn-2c96496243174dfa0f4582ca225b3bbd0411e9b235b2c46bc7133c775139ca4f.png" for 127.0.0.1 at 2015-11-17 17:27:36 -0800
+
+
+Started GET "/assets/blogcolumnbottom-088a70a6b79d0c7b85e176bb83e6fa02e49f3acd35ccfdd5cb4bdd596efae559.png" for 127.0.0.1 at 2015-11-17 17:27:36 -0800
+
+
+Started GET "/assets/blogcolumntop-6133e5cea647cbd9b676bfbca1f5e4ff9d2b82eeb151a31966bcffc667de0e1a.png" for 127.0.0.1 at 2015-11-17 17:27:36 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 17:27:43 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 3]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 2]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 92ms (Views: 90.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-fc6093d7a06d68abb464b9404ba58fe01e7dc65efdbb554a10c80ec863c6f90b.css?body=1" for 127.0.0.1 at 2015-11-17 17:27:44 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 17:27:44 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:27:44 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 17:27:44 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 17:27:44 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:27:44 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:27:44 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:27:44 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:27:44 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 17:27:44 -0800
+
+
+Started GET "/assets/blogcolumn-2c96496243174dfa0f4582ca225b3bbd0411e9b235b2c46bc7133c775139ca4f.png" for 127.0.0.1 at 2015-11-17 17:27:44 -0800
+
+
+Started GET "/assets/blogcolumntop-6133e5cea647cbd9b676bfbca1f5e4ff9d2b82eeb151a31966bcffc667de0e1a.png" for 127.0.0.1 at 2015-11-17 17:27:44 -0800
+
+
+Started GET "/assets/blogcolumnbottom-088a70a6b79d0c7b85e176bb83e6fa02e49f3acd35ccfdd5cb4bdd596efae559.png" for 127.0.0.1 at 2015-11-17 17:27:44 -0800
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 17:27:45 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 3]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 2]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 59ms (Views: 58.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-fc6093d7a06d68abb464b9404ba58fe01e7dc65efdbb554a10c80ec863c6f90b.css?body=1" for 127.0.0.1 at 2015-11-17 17:27:45 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 17:27:45 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 17:27:45 -0800
+
+
+Started GET "/assets/arts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:27:45 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 17:27:45 -0800
+
+
+Started GET "/assets/blog_comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:27:45 -0800
+
+
+Started GET "/assets/blog_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:27:45 -0800
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:27:45 -0800
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 17:27:45 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 17:27:45 -0800
+
+
+Started GET "/assets/blogcolumnbottom-088a70a6b79d0c7b85e176bb83e6fa02e49f3acd35ccfdd5cb4bdd596efae559.png" for 127.0.0.1 at 2015-11-17 17:27:45 -0800
+
+
+Started GET "/assets/blogcolumn-2c96496243174dfa0f4582ca225b3bbd0411e9b235b2c46bc7133c775139ca4f.png" for 127.0.0.1 at 2015-11-17 17:27:45 -0800
+
+
+Started GET "/assets/blogcolumntop-6133e5cea647cbd9b676bfbca1f5e4ff9d2b82eeb151a31966bcffc667de0e1a.png" for 127.0.0.1 at 2015-11-17 17:27:45 -0800
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-17 17:28:10 -0800
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.2ms)[0m  [1mSELECT "arts".* FROM "arts"[0m
+  Rendered arts/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 60ms (Views: 59.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 17:28:12 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 54ms (Views: 52.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-17 17:31:21 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-17 17:31:22 -0800
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.3ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 60ms (Views: 59.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 17:31:29 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  [1m[35mBlogComment Load (0.2ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 3]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 2]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 82ms (Views: 80.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 17:31:30 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 3]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 2]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 70ms (Views: 69.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-17 17:31:42 -0800
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.2ms)[0m  [1mSELECT "arts".* FROM "arts"[0m
+  Rendered arts/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 55ms (Views: 54.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 17:50:11 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 54ms (Views: 53.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-17 17:50:36 -0800
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.2ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 57ms (Views: 56.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 18:12:07 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 3]]
+  [1m[36mBlogComment Load (0.0ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 2]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 55ms (Views: 54.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-17 18:12:46 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  [1m[35mBlogComment Load (0.2ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 3]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 2]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 57ms (Views: 56.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-17 18:12:48 -0800
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.2ms)[0m  [1mSELECT "arts".* FROM "arts"[0m
+  Rendered arts/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 58ms (Views: 57.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-19 14:40:11 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.2ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (248.2ms)
+Completed 200 OK in 334ms (Views: 317.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-19 14:40:30 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 46ms (Views: 45.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-19 14:40:31 -0800
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 45ms (Views: 44.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-11-19 14:40:39 -0800
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 46ms (Views: 45.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-19 14:40:42 -0800
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.2ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 77ms (Views: 73.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/arts/3" for 127.0.0.1 at 2015-11-19 14:40:48 -0800
+Processing by ArtsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArt Load (0.2ms)[0m  [1mSELECT  "arts".* FROM "arts" WHERE "arts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered arts/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 70ms (Views: 58.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gallery" for 127.0.0.1 at 2015-11-19 14:40:53 -0800
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.2ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 51ms (Views: 50.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-19 14:40:55 -0800
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC[0m
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 3]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 2]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 51ms (Views: 50.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2015-11-19 14:41:37 -0800
+
+ActionController::RoutingError (No route matches [GET] "/login"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/pax/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/pax/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/pax/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.4ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (40.9ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (16.5ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/pax/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (33.0ms)
+
+
+Started GET "/blog" for 127.0.0.1 at 2015-11-23 18:01:23 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"  ORDER BY created_at DESC
+  [1m[36mBlogComment Load (0.2ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  [1m[35mBlogComment Load (0.1ms)[0m  SELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?  [["blog_post_id", 2]]
+  [1m[36mBlogComment Load (0.1ms)[0m  [1mSELECT "blog_comments".* FROM "blog_comments" WHERE "blog_comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/index.html.erb within layouts/application (232.6ms)
+Completed 200 OK in 321ms (Views: 305.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.self-fc6093d7a06d68abb464b9404ba58fe01e7dc65efdbb554a10c80ec863c6f90b.css?body=1" for 127.0.0.1 at 2015-11-23 18:01:23 -0800
+
+
+Started GET "/assets/blogcolumntop-6133e5cea647cbd9b676bfbca1f5e4ff9d2b82eeb151a31966bcffc667de0e1a.png" for 127.0.0.1 at 2015-11-23 18:01:23 -0800
+
+
+Started GET "/assets/blogcolumn-2c96496243174dfa0f4582ca225b3bbd0411e9b235b2c46bc7133c775139ca4f.png" for 127.0.0.1 at 2015-11-23 18:01:23 -0800
+
+
+Started GET "/assets/blogcolumnbottom-088a70a6b79d0c7b85e176bb83e6fa02e49f3acd35ccfdd5cb4bdd596efae559.png" for 127.0.0.1 at 2015-11-23 18:01:23 -0800

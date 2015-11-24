@@ -70,6 +70,37 @@ column-count: 2; /* For when the standard gets fully supported */
    width: 150px;
 }
 
+.blogcomleftcolumn {
+   text-align: left;
+   height: 100%; 
+   width: 100px;
+   display: inline-block;
+}
+
+.blogcomrightcolumn {
+   float: right;
+   display: inline-block;
+   width: 100px;
+}
+
+.commentpost {
+   padding: 5px;
+   margin: 64px;
+   border: solid 3px;
+}
+
+.commenttitle {
+  padding: 2px;
+  margin: 2px;
+  font-size: 14px;
+}
+
+
+.commentauthor {
+  padding: 1px;
+  margin: 1px;
+  font-size: 10px;	
+}
 
 
 /*

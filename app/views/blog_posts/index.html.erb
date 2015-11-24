@@ -17,15 +17,34 @@
 
         <p><%= blog_post.body %></p>
 	<hr />
+	<div align="center"> Comments </div>
+	<div class="commentsbox">
+	<div class="comments">
 	<% @comments = BlogComment.where(:blog_post_id => blog_post.id) %>
 	<% @comments.each do |comment| %>
+	<div class="commentpost">
+	<h2 class="commenttitle"><%= comment.name %> </h2>
+        <hr />
+	<h3 class="commentauthor">by: <%= comment.user %> </h3>
+	<hr />
         <p><%= comment.body %> </p>
+	</div>
         <% end %>
-	<p><%= link_to 'Add comment', new_blog_comment_path %>
-
+	</div>
+	<div class="newcomment" align="center"><%= link_to 'Add comment', new_blog_comment_path %></div>
+	</div>
       </div>
     <% end %>
+	</div>
+</td>
+	<td width="60px">
+
+		<%= image_tag ("blogcolumntop.png") %> </br>
+		<%= image_tag ("blogcolumn.png") %> </br>
+		<%= image_tag ("blogcolumnbottom.png") %>
+</td>
+
 
 <br>
 
-<%= link_to 'New Blog post', new_blog_post_path %>
+<div class="newblog" align="center"><%= link_to 'New Blog post', new_blog_post_path %></div>
